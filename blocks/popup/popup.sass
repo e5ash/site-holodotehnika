@@ -1,0 +1,39 @@
+$zIndex-popup: 1000
+
+.popup
+    display: none
+
+.popup, .popup__bg
+    z-index: $zIndex-popup
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+
+.popup__window
+    z-index: $zIndex-popup + 2
+    position: relative
+    width: 400px
+    height: 300px
+    margin-left: auto
+    margin-right: auto
+    background: $c-white
+
+.popup__container
+    height: 100%
+
+.popup__title
+    text-align: center
+
+.popup__close
+    position: absolute
+    top: 0
+    right: 0
+    width: 20px
+    height: 20px
+
+.popup__bg
+    z-index: $zIndex-popup + 1
+    position: fixed
+    background: rgba(0, 0, 0, .3)

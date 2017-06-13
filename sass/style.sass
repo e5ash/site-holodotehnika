@@ -1,0 +1,4194 @@
+@import "sprite.sass"
+@import "grid.sass"
+@import "fonts.sass"
+
+
+$color-1: #12263b
+$font-size: 14px
+$font-family-1: 'Lato', sans-serif
+
+
+*
+	margin: 0
+	padding: 0
+	border: 0
+	box-sizing: border-box
+
+body
+	font: $font-size $font-family-1
+	color: $color-1
+	background: white
+	box-sizing: border-box
+
+h1, h2, h3, h4, h5, h6
+	font-weight: 800
+	color: #3b3b3b
+	text-align: left !important
+
+h4, h5, h6
+	font-weight: 700
+h1
+	font-size: 30px
+
+h2
+	font-size: 25px
+	line-height: 21px
+	margin-bottom: 10px
+h3
+	font-size: 22px
+	line-height: 21px
+	margin-bottom: 10px
+h4
+	font-size: 18px
+	line-height: 21px
+	margin-bottom: 7px
+h5
+	font-size: 14px
+h6
+	font-size: 12px
+
+
+ul
+	font-size: 0
+	li
+		font-size: $font-size
+	&.li_line
+		li
+			display: inline-block
+
+	&.li_reset
+		li
+			list-style-type: none
+	&.ul_snowflake
+		margin-bottom: 20px
+		li
+			position: relative
+			list-style: none
+			display: block
+			line-height: 25px
+			margin-left: 17px
+			&:before
+				content: ''
+				display: block
+				position: absolute
+				left: -17px
+				top: 6px
+				@include sprite($snowflake)
+
+
+span
+	position: relative
+	display: inline-block
+
+
+a, .button, .checkbox label, .radio label, .button
+	outline: none
+	cursor: pointer
+	transition: .3s
+
+a
+	color: $color-1
+	text-decoration: none
+	border-bottom: 1px solid transparent
+	&:hover
+		border-bottom: 1px solid $color-1
+
+
+.button, .input, .textarea, input
+	font-size: $font-size
+	font-family: $font-family-1
+	outline: none
+
+
+.button
+	display: inline-block
+	color: $color-1
+	background: white
+	text-align: center
+	&.button_block
+		display: block
+		// margin-left: auto
+		// margin-right: auto
+
+.button_blue
+	color: white
+	font-weight: 800
+	border-radius: 4px
+	background: rgb(0,91,158)
+	background: -moz-linear-gradient(to bottom, rgb(0,91,158) 0%,rgb(7,79,138) 100%)
+	background: -webkit-linear-gradient(to bottom, rgb(0,91,158) 0%,rgb(7,79,138) 100%)
+	background: linear-gradient(to bottom, rgb(0,91,158) 0%,rgb(7,79,138) 100%)
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#005b9e', endColorstr='#074f8a',GradientType=0 )
+	background-size: 100% 140%
+	background-position: 0 100%
+	&:hover
+		background: rgb(7,79,138)
+		background: -moz-linear-gradient(top, rgb(7,79,138) 0%, rgb(0,91,158) 100%)
+		background: -webkit-linear-gradient(top, rgb(7,79,138) 0%,rgb(0,91,158) 100%)
+		background: linear-gradient(to bottom, rgb(7,79,138) 0%,rgb(0,91,158) 100%)
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#074f8a', endColorstr='#005b9e',GradientType=0 )
+		background-position: 0
+
+.button_blue-xs
+	width: 120px
+	// height: 33px
+	line-height: 33px
+
+
+	
+
+.button_blue-s
+	font-size: 16px
+	width: 150px
+	line-height: 44px
+	&.button_radius
+		width: 100px
+		font-weight: 800
+		line-height: 42px
+
+.button_blue-l
+	font-size: 18px
+	width: 190px
+	line-height: 44px
+
+	
+
+.button_blue-xl
+	display: block
+	width: 240px
+	height: 60px
+	padding: 11px 0
+	background: rgb(18,129,192)
+	background: -moz-linear-gradient(top,  rgb(18,129,192) 0%, rgb(10,108,164) 100%)
+	background: -webkit-linear-gradient(top,  rgb(18,129,192) 0%,rgb(10,108,164) 100%)
+	background: linear-gradient(to bottom,  rgb(18,129,192) 0%,rgb(10,108,164) 100%)
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1281c0', endColorstr='#0a6ca4',GradientType=0 )
+	box-shadow: 1px 2px 2px 0px rgba(0, 0, 0, 0.35)
+	&:hover
+		background: rgb(10,108,164)
+		background: -moz-linear-gradient(top,  rgb(10,108,164) 0%, rgb(18,129,192) 100%)
+		background: -webkit-linear-gradient(top,  rgb(10,108,164) 0%,rgb(18,129,192) 100%)
+		background: linear-gradient(to bottom,  rgb(10,108,164) 0%,rgb(18,129,192) 100%)
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0a6ca4', endColorstr='#1281c0',GradientType=0 )
+		box-shadow: 1px 1px 1px 0px rgba(0, 0, 0, 0.35)
+	span
+		font-size: 17px
+		display: block
+		text-transform: uppercase
+
+.button_blue-xxl
+	font-size: 24px
+	max-width: 550px
+	padding: 13px 10px
+
+.button_transparent
+	font-size: 15px
+	width: 120px
+	border: 1px solid #1CA0DE
+	color: #005a81
+	font-weight: 800
+	line-height: 26px
+	overflow: hidden
+	position: relative
+	span
+		z-index: -1
+		position: absolute
+		display: block
+		top: 0
+		left: -120px
+		line-height: 26px
+		height: 26px
+		width: 120px
+		background: #125289
+		transition: .3s
+	&:hover
+		color: white
+		border: 1px solid #125289
+		background: transparent
+		span
+			left: 0
+
+.button_gray
+	width: 120px
+	color: #0d3352
+	line-height: 35px
+	font-weight: bold
+	border-radius: 4px
+	background: rgb(240,244,248)
+	background: -moz-linear-gradient(top,  rgb(240,244,248) 0%, rgb(219,225,232) 100%)
+	background: -webkit-linear-gradient(top,  rgb(240,244,248) 0%,rgb(219,225,232) 100%)
+	background: linear-gradient(to bottom,  rgb(240,244,248) 0%,rgb(219,225,232) 100%)
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0f4f8', endColorstr='#dbe1e8',GradientType=0 )
+	&:hover
+		background: rgb(221,228,237)
+		background: -moz-linear-gradient(top,  rgb(221,228,237) 0%, rgb(198,208,220) 100%)
+		background: -webkit-linear-gradient(top,  rgb(221,228,237) 0%,rgb(198,208,220) 100%)
+		background: linear-gradient(to bottom,  rgb(221,228,237) 0%,rgb(198,208,220) 100%)
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dde4ed', endColorstr='#c6d0dc',GradientType=0 )
+
+
+.button_gray-smoke
+	width: 160px
+	line-height: 36px
+	border-radius: 3px
+	font-weight: bold
+	color: #0d457d
+	border: 1px solid #C6D1D9
+	background: rgb(255,255,255)
+	background: -moz-linear-gradient(top,  rgb(255,255,255) 0%, rgb(235,237,242) 100%)
+	background: -webkit-linear-gradient(top,  rgb(255,255,255) 0%,rgb(235,237,242) 100%)
+	background: linear-gradient(to bottom,  rgb(255,255,255) 0%,rgb(235,237,242) 100%)
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ebedf2',GradientType=0 )
+	.icon
+		margin-right: 8px
+	&:hover
+		border: 1px solid #ACC4D4
+		background: rgb(242,244,247)
+		background: -moz-linear-gradient(top,  rgb(242,244,247) 0%, rgb(233,238,244) 100%)
+		background: -webkit-linear-gradient(top,  rgb(242,244,247) 0%,rgb(233,238,244) 100%)
+		background: linear-gradient(to bottom,  rgb(242,244,247) 0%,rgb(233,238,244) 100%)
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f4f7', endColorstr='#e9eef4',GradientType=0 )
+
+
+
+.button_yellow
+	
+
+.button_yellow
+	color: #09294b
+	font-weight: 900
+	background: rgb(255,218,11)
+	background: -moz-linear-gradient(top,  rgb(255,218,11) 0%, rgb(220,171,0) 100%)
+	background: -webkit-linear-gradient(top,  rgb(255,218,11) 0%,rgb(220,171,0) 100%)
+	background: linear-gradient(to bottom,  rgb(255,218,11) 0%,rgb(220,171,0) 100%)
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffda0b', endColorstr='#dcab00',GradientType=0 )
+	&:hover
+		background: rgb(255,226,65)
+		background: -moz-linear-gradient(top,  rgb(255,226,65) 0%, rgb(235,191,37) 100%)
+		background: -webkit-linear-gradient(top,  rgb(255,226,65) 0%,rgb(235,191,37) 100%)
+		background: linear-gradient(to bottom,  rgb(255,226,65) 0%,rgb(235,191,37) 100%)
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffe241', endColorstr='#ebbf25',GradientType=0 )
+
+.button_yellow-l
+	width: 150px
+	line-height: 44px
+	font-size: 18.3px
+	border-radius: 2px
+.button_yellow-s
+	width: 100px
+	line-height: 42px
+	font-size: 16px
+
+
+.button_yellow-icon
+	position: relative
+	width: 200px
+	line-height: 30px
+	color: white
+	background: #194577
+	padding-right: 30px
+	font-weight: bold
+	font-size: 13px
+	&:before
+		position: absolute
+		content: ''
+		top: 0
+		right: 0
+		width: 30px
+		height: 30px
+		background: #EECC3C
+	&:after
+		position: absolute
+		content: ''
+		top: 10px
+		right: 10px
+		@include sprite($arrow-right-blue-2)
+	&:hover
+		color: #043e6d
+		background: #EECC3C
+
+.button_radius
+	border-radius: 50px
+
+
+
+
+.input
+	display: inline-block
+	padding: 5px 10px
+	border: 1px solid gray
+	&:active
+		border: 1px solid #00B7FF
+	&.input_block
+		display: block
+
+.input_dark
+	margin-bottom: 8px
+	padding: 13.5px 17px
+	font-size: 16px
+	border: 1px solid #1D5985
+	color: white
+	background: #123C6A
+	transition: .3s
+	font-weight: 600
+	&:focus
+		border: 1px solid white
+
+
+
+.textarea
+	display: block
+	padding: 5px 10px
+	border: 1px solid gray
+	resize: none
+	width: 100%
+	&:active
+		border: 1px solid #00B7FF
+	
+
+
+/* Select */
+.select
+	position: relative
+	&.select_open
+		.select__title
+			&:after
+				transform: rotate(180deg)
+		.select__list
+			display: block
+			color: #007cc4
+	&.select_trasparent
+		width: 110px
+		.select__title
+			background: none
+			border: none
+			color: #007cc4
+			&:after
+				top: 10px
+				right: 2px
+				border-color: #007cc4 transparent transparent transparent
+		.select__list
+			width: 120px
+			font-size: 12px
+			font-weight: 600
+	::-webkit-scrollbar
+		width: 7px
+		background: transparent
+
+	::-webkit-scrollbar-thumb
+		background: gray
+
+.select__title
+	border: 1px solid #D1D3D4
+	padding: 4px 10px
+	width: 100%
+	box-sizing: border-box
+	cursor: pointer
+	background: #F4F6F9
+	&:after
+		content: ''
+		position: absolute
+		top: 17px
+		right: 10px
+		width: 0
+		height: 0
+		border-style: solid
+		border-width: 3px 2.5px 0 2.5px
+		border-color: #000000 transparent transparent transparent
+		transition: .3s
+
+
+.select__list
+	display: none
+	z-index: 1
+	position: absolute
+	top: calc(100% - 1px)
+	left: 0
+	width: 100%
+	border: 1px solid #DCDCDC
+	background: white
+	box-sizing: border-box
+	max-height: 110px
+	overflow-y: auto
+
+
+.select__list-item
+	display: block
+	padding: 4px 10px
+	cursor: pointer
+	transition: .3s
+	color: #12263b
+	&:hover
+		background: #f4f6f9
+
+.select__parsing
+	display: none
+
+
+
+
+
+/* Popup */
+$zIndex-popup: 1000
+
+.popup
+	display: none
+
+.popup, .popup__bg
+	z-index: $zIndex-popup
+	position: absolute
+	top: 0
+	left: 0
+	width: 100%
+	height: 100%
+
+.popup__window
+	z-index: $zIndex-popup + 2
+	position: relative
+	width: auto
+	height: auto
+	margin-left: auto
+	margin-right: auto
+
+.popup__container
+	height: 100%
+
+.popup__title
+	// text-align: center
+
+.popup__close
+	position: absolute
+	top: 14px
+	right: 14px
+	cursor: pointer
+	transition: .6s
+	&:hover
+		transform: rotate(180deg)
+
+.popup__bg
+	z-index: $zIndex-popup + 1
+	position: fixed
+	background: rgba(6, 33, 64, .7)
+
+
+
+.popup_feedback
+	&.popup_product
+		.popup__window
+			border-color: #1274C6
+		.popup__desc
+			display: none
+		.popup__product
+			display: block
+		.popup__title
+			span
+				display: block
+				+ span
+					display: none
+	.popup__window
+		width: 630px
+		background: white
+		border: 5px solid #16A5F0
+		padding: 30px 35px 37px
+	.popup__title
+		font-size: 26px
+		font-weight: 700
+		text-transform: uppercase
+		margin-bottom: 12px
+		span
+			display: none
+			+ span
+				display: block
+	.popup__desc
+		// display: none
+		font-weight: 600
+		line-height: 19px
+	.popup__product
+		color: #686e74
+		font-weight: 600
+		line-height: 23px
+		display: none
+		span
+			display: block
+			color: #0083ce
+			font-size: 18px
+	.popup__body
+		margin-top: 20px
+		border-top: 1px solid #BDCCDA
+		padding-top: 25px
+		::placeholder
+			color: #7f96a7
+	.input
+		margin-bottom: 16px
+		margin-right: 14px
+		border: 1px solid #C3CFD9
+		background: #F8FBFE
+		font-size: 15px
+		font-weight: 500
+		padding: 0 14px
+		line-height: 37px
+		transition: .3s
+		&:focus
+			border: 1px solid #97ABBD
+			background: white
+		&.input-name
+			width: 310px
+		&.input-org
+			width: 222px
+			margin-right: 0
+		&.input-phone
+			width: 200px
+		&.input-email
+			width: 270px
+	.textarea
+		padding: 10px 14px
+		border: 1px solid #C3CFD9
+		background: #F8FBFE
+		font-size: 15px
+		height: 135px
+		margin-bottom: 25px
+		transition: .3s
+		&:focus
+			border: 1px solid #97ABBD
+			background: white
+	.row
+		padding-top: 18px
+		border-top: 1px solid #C3CFD9
+	.popup__agreement
+		margin-left: 25px
+		font-size: 12px
+		line-height: 15px
+		font-weight: 600
+		color: #435e73
+		padding-top: 6px
+		a
+			color: #01599b
+			&:hover
+				border-color: #01599b
+.popup__window_step-1
+	position: relative
+	width: 470px
+	margin-left: auto
+	margin-right: auto
+	background: #17477A
+	color: white
+	padding: 30px 40px 35px
+	.popup__header
+		border-bottom: 1px solid #123C6A
+	.popup__title
+		font-size: 20px
+		line-height: 26px
+		font-weight: 600
+		text-align: left
+		padding-bottom: 20px
+		span
+			color: #fed90b
+	.popup__body
+		border-top: 1px solid #1C5796
+		padding-top: 30px
+		height: auto
+		::placeholder
+			color: #8cb7d8
+
+		.input
+			width: 310px
+			margin-bottom: 12px
+
+		.button
+			width: 270px
+			line-height: 44px
+			border-radius: 2px
+			font-size: 18px
+			font-weight: 900
+			margin-top: 18px
+			box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.35)
+			&:hover
+				box-shadow: none
+			.icon
+				margin-left: 10px
+		.desc
+			font-size: 12px
+			line-height: 15px
+			font-weight: 600
+			color: #b2bece
+			margin-top: 16px
+			a
+				color: white
+				&:hover
+					border-bottom: 1px solid white
+
+.popup__window_step-2
+	position: relative
+	background: white
+	width: 630px
+	margin-left: auto
+	margin-right: auto
+	padding: 30px 40px
+	display: none
+	.popup__body
+	.popup__title
+		font-size: 20px
+		font-weight: 600
+		margin-bottom: 15px
+		span
+			display: block
+			font-size: 10px
+			font-weight: 700
+			color: #77808a
+			margin-bottom: 5px
+			text-transform: uppercase
+
+.successfully
+	display: none
+	
+	.popup__window
+		position: relative
+		background: white
+		border: 5px solid #00B355 !important
+		width: 630px
+		padding: 30px 35px
+		margin-top: 60px
+		&:before
+			content: ''
+			position: absolute
+			background: url('../img/bg/successfully.png') no-repeat
+			width: 214px
+			height: 344px
+			bottom: 0
+			right: 35px
+	.popup__title
+		font-size: 26px
+		line-height: 30px
+		font-weight: 700
+		color: #44ad15
+		margin-bottom: 15px
+
+	.popup__body
+		p
+			font-size: 15px
+			line-height: 20px
+			font-weight: 500
+			color: #0c1721
+			padding-bottom: 25px
+			border-bottom: 1px solid #BDCCDA
+	.close-block
+		margin-top: 20px
+
+
+
+
+
+
+
+.interview-stat
+	border: 1px solid #D9DBDE
+	padding: 20px 29px
+
+
+.interview-stat__title
+	font-size: 10px
+	font-weight: 700
+	color: #77808a
+	margin-bottom: 15px
+
+.interview-stat__subtitle
+	font-size: 16px
+	font-weight: 600
+	color: #181818
+	margin-bottom: 5px
+
+.interview-stat__status
+	width: 355px
+	height: 8px
+	position: relative
+	background: #D0DEEC
+	top: 3px
+	margin-right: 14px
+	> div
+		position: absolute
+		left: 0
+		top: 0
+		height: 8px
+		width: 1px
+		background: #17477A
+		transition: .3s
+
+.interview-stat__item
+	margin-bottom: 10px
+
+.interview-stat__bottom
+	border-top: 1px solid #D9DBDE
+	padding-top: 14px
+	font-size: 10px
+	color: #3f4246
+	.icon
+		margin-right: 9px
+		position: relative
+		top: -2px
+
+.close-block
+	display: inline-block
+	margin-top: 25px
+	font-size: 16px
+	font-weight: 600
+	color: #0e457d
+	border-bottom: 1px dotted #0e457d
+	cursor: pointer
+	transition: .3s
+	&:hover
+		border-bottom: 1px dotted transparent
+
+
+
+
+
+
+
+
+
+/* Tabs */
+.tabs
+
+.tabs__nav
+
+.tabs__nav-item
+	margin-right: 10px
+	padding: 4px 8px
+	cursor: pointer
+	border-radius: 3px 3px 0 0
+	transition: .3s
+	&.tabs__nav-item_select, &:hover
+		background: #DCDCDC
+
+.tabs__content
+	min-height: 200px
+	border: 1px solid #DCDCDC
+	border-radius: 0 0 3px 3px
+	padding: 10px
+.tabs__tab
+	display: none
+
+
+
+
+.search-form
+	position: relative
+	width: 390px
+	margin-top: 58px
+	input
+		position: relative
+		display: block
+		line-height: 40px
+		border: 1px solid #0F62A2
+		box-shadow: inset -5px 0px 13px 0px rgba(0, 0, 0, 0.15)
+		background: #174579
+		font-size: 16px
+		font-weight: 600
+		padding: 0 20px
+		border-radius: 30px
+		width: 100%
+		color: white
+		transition: border-color .3s
+		&:focus
+			border: 2px solid white
+			top: -1px
+			left: -1px
+	::placeholder
+		color: #4e8ec0
+	button
+		position: absolute
+		top: 13px
+		right: 15px
+		background: none
+
+.callback
+	color: #73c8f7
+	cursor: pointer
+	&:hover
+		span
+			border-bottom: 1px dotted transparent
+	.icon
+		position: relative
+		margin-right: 8px
+		top: 1px
+	span
+		border-bottom: 1px dotted #73c8f7
+		transition: .3s
+	&.callback_blue
+		color: #1586C4
+		span
+			border-bottom: 1px dotted #1586C4
+		&:hover
+			span
+				border-bottom: 1px dotted transparent
+	&.callback_yellow
+		color: #ffcd1f
+		span
+			border-bottom: 1px dotted #ffcd1f
+			font-weight: 700
+		&:hover
+			span
+				border-bottom: 1px dotted transparent
+
+.callback-block
+	position: absolute
+	display: none
+	width: 280px
+	top: 0
+	right: 0
+	background: white
+	z-index: 20
+	border: 1px solid #B4CDE3
+	border-radius: 2px
+	padding: 18px 28px 20px
+
+.callback-block__title
+	font-size: 18px
+	font-weight: 800
+	color: #0f447a
+	margin-bottom: 12px
+
+.callback-block__close
+	position: absolute
+	right: 11px
+	top: 7px
+	cursor: pointer
+	width: 11px
+	height: 11px
+	transition: .6s
+	span
+		display: block
+		width: 10px
+		height: 2px
+		background: #1F4062
+		margin-top: 4px
+		&:first-of-type
+			transform: rotate(45deg)
+		&:last-of-type
+			transform: rotate(-45deg)
+			margin-top: -2px
+	&:hover
+		transform: rotate(180deg)
+
+.callback-block__input
+	display: block
+	margin-bottom: 8px
+	line-height: 38px
+	padding: 0 14px
+	width: 100%
+	border: 1px solid #C3CAD5
+	border-radius: 2px
+	transition: .3s
+	&:focus
+		border: 1px solid #1F4062
+.callback-block__button
+	display: block
+	margin-top: 13px
+	width: 130px
+	line-height: 37px
+	font-size: 13px
+
+
+.number
+
+.number_federal
+	margin-top: 30px
+	margin-bottom: 10px
+	.number__digits
+		font-size: 24px
+		font-weight: 800
+
+	.number__desc
+		font-size: 11px
+		color: white
+
+.number_landline
+	.number__digits
+		font-weight: 600
+		font-size: 18px
+	.number__desc
+		margin-top: 3px
+
+
+
+
+
+.header
+
+.panel
+	background: url('../img/bg/header.jpg') repeat-x center top
+	min-height: 158px
+
+.panel__logo
+	margin-top: 30px
+	margin-right: 35px
+	a
+		display: block
+		border-bottom: none !important
+		transition: .3s
+		img
+			transition: .5s
+			padding: 9px 2px
+			&:hover
+				transform: scale(1.02)
+
+.panel__contacts
+	float: right
+	padding-right: 10px
+	position: relative
+	.callback-block
+		right: 70px
+		top: 140px
+	a
+		color: white
+		border-bottom: none !important
+		cursor: default
+
+.nav
+	border-top: 4px solid #EECC3C
+	text-align: center
+	background: url('../img/bg/nav.jpg')
+	a
+		border-bottom: none !important
+	li
+		transition: .3s
+	.container
+		padding-left: 0
+		padding-right: 0
+		> ul
+			> li
+				position: relative
+
+				&:hover
+					> ul
+						z-index: 10
+						opacity: 1
+						transform: translateY(0px)
+				> a
+					display: block
+					color: #15283d
+					font-weight: 800
+					padding-left: 15px
+					padding-right: 15px
+					line-height: 55px
+					background: url('../img/bg/nav.jpg')
+				&.nav__item_select, &:hover
+					> a
+						color: #073f70
+						background: url('../img/bg/nav-item.jpg') repeat-x center top
+				> ul
+					opacity: 0
+					z-index: -1
+					position: absolute
+					top: 100%
+					left: 0
+					text-align: left
+					background: url('../img/bg/nav-item-shadow.png') repeat-x top center, #0C5895
+					width: 245px
+					font-weight: 600
+					transition: .2s
+					transform: translateY(50px)
+					> li
+						display: block
+						border-bottom: 1px solid #1D6BA8
+						&.nav__item_sub
+							background: #174579
+							a
+								font-size: 14px
+								padding: 17px 22px
+							.icon
+								margin-left: 10px
+						&:last-of-type
+							border-bottom: none
+						&:hover
+							color: #ffda0b
+							background: #174579
+						> a
+							display: block
+							font-size: 16px
+							padding: 15.5px 22px
+							// line-height: 50px
+
+					a
+						color: white
+						
+				&.nav__item_catalog
+					position: static
+					> ul
+						width: calc(100% - 24px)
+						left: 12px
+						> li
+							position: relative
+							padding-bottom: 15px
+							transition: .3s
+							&:last-of-type
+								> a
+									> .icon
+										left: 30px
+							&:after
+								content: ''
+								position: absolute
+								bottom: 0
+								left: 0
+								width: 100%
+								height: 1px
+								background: #0A4A7B
+							> a
+								display: inline-block
+								padding: 0
+								font-size: 20px
+								line-height: 29px
+								font-weight: 800
+								margin-left: 84px
+								margin-top: 20px
+								margin-bottom: 5px
+								&:hover
+									color: #ffda0b
+
+							>.icon-wrap
+								display: block
+								position: absolute
+								left: 20px
+								top: 20px
+								width: 40px
+								text-align: center
+								> .icon
+									transform: scale(0.73)
+									margin-left: auto
+									margin-right: auto
+								> .icon-catalog-meat-white
+									margin-left: 5px
+								> .icon-catalog-power-white
+									margin-left: 5px
+								> .icon-catalog-snowflake-white
+									margin-left: 5px
+								> .icon-catalog-ice-white
+									margin-left: 3px
+							> ul
+								margin-left: 85px
+								line-height: 22px
+								li
+									margin-right: 20px
+								a
+									border-bottom: 1px solid transparent !important
+									font-weight: 600
+									&:hover
+										color: #ffda0b
+										border-bottom: 1px solid #ffda0b !important
+				&.in-2
+					position: static
+					> ul
+						width: 50%
+						left: 12px
+						padding: 25px 0 25px 42px
+						&:after
+							content: ''
+							position: absolute
+							right: 30px
+							top: 0
+							width: 1px
+							height: 100%
+							border-right: 1px dotted #589FD3
+						+ ul
+							left: calc(50% - 12px)
+							&:after
+								display: none
+						> li
+							border-bottom: none
+							line-height: 34px
+							background: none !important
+							> a
+								padding: 0
+								&:hover
+									color: #ffda0b
+
+.nav-btn
+	display: none
+	text-align: center
+	width: 105px
+	margin: 16px auto 0
+	cursor: pointer
+.nav-btn__hum
+	display: inline-block
+	span
+		display: block
+		width: 12px
+		height: 2px
+		margin-bottom: 2px
+		background: #15283d
+		&:last-of-type
+			margin-bottom: 0
+.nav-btn__text
+	text-transform: uppercase
+	display: inline-block
+	margin-left: 10px
+	font-size: 16px
+	font-weight: 800
+	position: relative
+	top: 1px
+	&:after
+		content: ''
+		display: inline-block
+		position: relative
+		@include sprite($arrow-down)
+		top: -3px
+		margin-left: 13px
+.title
+	font-size: 30px
+	font-weight: 800
+	line-height: 38px
+	margin-top: 20px
+	margin-bottom: 15px
+	text-transform: uppercase
+	&.title-normal
+		text-transform: none
+	+ .date
+		background: none
+		color: #005b9e
+		padding: 0
+		font-size: 15px
+		font-weight: 700
+		margin-bottom: 25px
+
+.subtitle
+	font-weight: 800
+	font-size: 24px
+
+
+
+
+
+
+
+/* Main */
+.breadcrumbs
+	border-bottom: 1px solid #E1E6EC
+	padding: 18px 0
+	li
+		font-size: 12px
+		font-weight: 500
+		color: #0b4982
+		&:after
+			display: inline-block
+			content: ''
+			@include sprite($arrow-right-black)
+			margin-left: 7px
+			margin-right: 7px
+		&:last-of-type
+			&:after
+				display: none
+		a
+			color: #12263b
+			&:hover
+				border-bottom: 1px solid #12263b
+			
+.page404
+	min-height: 431px
+	background: url('../img/bg/404.png') no-repeat right top
+
+.page404__wrapper
+	width: 550px
+
+.page404__desc
+	font-size: 22px
+	font-weight: 600
+	line-height: 28px
+	padding-bottom: 32px
+	border-bottom: 1px solid #DFE4EB
+	margin-bottom: 25px
+
+.page404__content
+	font-size: 18px
+	font-weight: 600
+	line-height: 24px
+	margin-bottom: 35px
+
+.page404__search
+	margin-bottom: 15px
+
+
+
+.search
+	position: relative
+	padding: 25px 40px
+	.icon
+		position: absolute
+		left: 57px
+		top: 39px
+	.input
+		width: 95%
+		line-height: 40px
+		padding: 0 82px 0 43px
+		border-radius: 50px
+		border: 1px solid #C5CCD4
+		font-weight: 600
+		transition: .3s
+		&:focus
+			border: 1px solid #074f8a
+				
+	.button
+		position: absolute
+		top: 25px
+		right: 40px
+		box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.26)
+		&:hover
+			box-shadow: none
+	::placeholder
+		color: #a5b3c6
+
+.search_gray
+	background: #EAECF1
+
+.return
+	padding-top: 20px
+
+	.icon
+		position: relative
+		top: -2px
+		margin-right: 15px
+	span
+		font-size: 18px
+		font-weight: 600
+		color: #0088c8
+		border-bottom: 1px solid transparent
+		transition: .3s
+	a
+		border-bottom: none !important
+		&:hover
+			span
+				border-bottom: 1px solid #0088c8
+
+.return_border
+	border-top: 1px solid #D4DDE7
+
+
+
+.section
+	float: left
+	width: 710px
+	color: #3b3b3b
+	font-weight: 600
+	text-align: justify
+	p
+		line-height: 21px
+		margin-bottom: 20px
+	strong
+		font-weight: 800
+	li
+		line-height: 25px
+		margin-left: 17px
+
+	ul, ol
+		margin-bottom: 20px
+
+
+	.table
+		font-size: 13px
+		margin-bottom: 20px
+		th
+			color: white
+			font-weight: 700
+			padding: 8.5px 18px
+			&:nth-of-type(odd)
+				border: 1px solid #184475
+				background: #184475
+			&:nth-of-type(even)
+				border: 1px solid #0C5B9A
+				background: #0C5B9A
+			&:first-of-type:nth-of-type(odd)
+				border-left: 2px solid #184475
+			&:last-of-type:nth-of-type(even)
+				border-right: 2px solid #0C5B9A
+			&:last-of-type:nth-of-type(odd)
+				border-right: 2px solid #184475
+		td
+			border: 1px solid #E3E3E3
+			font-weight: 600
+			padding: 8px 18px
+		td
+			&:first-of-type
+				border-left: 2px solid #E3E3E3
+			&:last-of-type
+				border-right: 2px solid #E3E3E3
+		tr
+			&:last-of-type
+				td
+					border-bottom: 2px solid #E3E3E3
+.aside
+	float: right
+	width: 240px
+	margin-right: -25px
+
+
+.aside-block
+	padding: 25px 25px 28px
+	background: #EAECF1
+	margin-bottom: 12px
+	overflow: hidden
+	&:last-of-type
+		margin-bottom: 0 
+
+.nav-block
+	li
+		display: block
+		margin-bottom: 2px
+		list-style: none
+		
+		&:last-of-type
+			margin-bottom: 0
+		&:hover
+			a
+				color: white
+				background: #2787D2
+		&.nav-block__item_select
+			a
+				color: white
+				background: #144C81
+	a
+		display: block
+		font-size: 16px
+		font-weight: 800
+		color: #282828
+		border-bottom: none !important
+		padding: 11px 20px
+		background: white
+
+.sub-block
+	position: relative
+	::placeholder
+		color: #868ea3
+
+.sub-block__title
+	font-size: 16px
+	font-weight: 800
+	position: relative
+	margin-bottom: 17px
+	line-height: 23px
+	span
+		font-size: 24px
+	.icon
+		position: absolute
+		right: 0
+		top: 0
+
+.sub-block__input
+	padding: 0 13px
+	line-height: 31px
+	border: 1px solid #B3BDC3
+	margin-bottom: 10px
+	background: #F3F5F8
+	transition: .3s
+	&:focus
+		background: white
+
+
+
+.sub-block__desc
+	margin-top: 8px
+	font-weight: 500
+	font-size: 11px
+	line-height: 13px
+	a
+		color: #365f7f
+		&:hover
+			border-bottom: 1px solid #365f7f
+
+
+.sub-block__message
+	transform: translateX(-215px)
+	transition: .3s
+	&.message_true
+		position: absolute
+		top: 62px
+		left: -25px
+	&.message_false
+		display: none
+
+
+
+
+
+
+
+
+
+.advantages
+	text-align: center
+	border-top: 1px solid #DADADA
+	padding-top: 40px
+	padding-bottom: 55px
+	margin-top: 25px
+	
+	
+
+.advantages__title
+	margin-bottom: 40px
+
+
+.advantages__img
+	height: 67px
+	line-height: 69px
+	margin-bottom: 25px
+	img
+		display: inline-block
+		vertical-align: middle
+
+
+.advantages__subtitle
+	font-size: 18px
+	font-weight: 900
+	margin-bottom: 10px
+
+
+.advantages__desc
+	font-size: 13px
+	line-height: 17px
+	font-weight: 600
+	color: #2f3133
+
+
+.news
+	.news__img
+		img
+				display: block
+		a
+			border-bottom: none !important
+.news__top
+
+
+.news_page
+	.col
+		&:first-of-type
+			.news__item
+				padding-top: 10px
+	.news__item
+		padding-top: 38px
+		padding-bottom: 35px
+		border-bottom: 1px solid #DFE3EB
+	.news__img, .news__content
+		float: left
+	.news__img
+		width: 310px
+		height: 109px
+		background: #E1E3E6
+
+	.news__content
+		margin-left: 30px
+		width: 350px
+
+	.news__subtitle
+		font-size: 20px
+		line-height: 26px
+		text-align: left
+
+	.news__date
+		margin-top: -3px
+
+	.news__desc
+		text-align: left
+
+
+.pagination
+	text-align: center
+	margin-top: 35px
+	span, ul, li, a
+		display: inline-block !important
+	span
+		margin-left: 5px
+		margin-right: 5px
+		font-size: 13px
+		color: #434343
+	li
+		
+		margin-left: 3px!important
+		
+		&:last-of-type
+			margin-left: 0
+		&:before
+			display: none !important
+		&.pagination__item_select
+			a
+				color: white
+				background: #144C81
+				text-decoration: none
+	a
+		display: block
+		color: #032c4a
+		width: 30px
+		height: 30px
+		background: #EAECF1
+		padding-top: 4px
+		border-bottom: none !important
+
+		&:hover
+			color: white
+			background: #1476C6
+			text-decoration: underline
+
+
+.other
+	padding-top: 35px
+	border-top: 4px solid #FFD93E
+
+.other_news
+	.other__bottom
+		padding-bottom: 50px
+		.col
+			&:nth-of-type(2)
+				padding-left: 4.5px
+			&:nth-of-type(3)
+				padding-left: 9px
+		.news__desc
+			padding-right: 5px
+
+.other_gallery
+	.other__bottom
+		.col
+			&:nth-of-type(2)
+				padding-left: 10px
+			&:nth-of-type(3)
+				padding-left: 20px
+
+.other__top
+	margin-bottom: 25px
+
+
+
+.other__button
+	float: right
+	.button
+		position: relative
+		top: -1.5px
+
+
+.news__date
+	font-size: 12px
+	color: #292929
+	font-weight: 500
+	margin-bottom: 10px
+
+
+
+.news__subtitle
+	font-size: 16px
+	line-height: 21px
+	font-weight: 700
+	margin-top: 14px
+	margin-bottom: 14px
+	a
+		color: #004c83
+		&:hover
+			border-bottom: 1px solid #004c83
+
+
+.news__desc
+	font-size: 13px
+	line-height: 17px
+	font-weight: 500
+	color: #292929
+
+
+
+
+
+
+
+
+.contacts
+	margin-bottom: 60px
+
+.contacts__left
+	width: 440px
+
+.contacts__right
+	float: right
+	width: 470px
+
+.contacts__desc
+	color: #646a76
+	font-size: 13px
+	line-height: 16px
+	margin-bottom: 22px
+
+.contacts__block
+	margin-bottom: 22px
+
+.contacts__block-title
+	display: inline-block
+	font-size: 8.37px
+	font-weight: 800
+	line-height: 20px
+	// padding-bottom: 5px
+	color: #fff
+	background: #B1BDCC
+	margin-bottom: 5px
+	text-transform: uppercase
+	padding: 0 10px
+
+.contacts__block-text
+	font-size: 16px
+	line-height: 22px
+	font-weight: 600
+	.phone
+		border-bottom: none !important
+	.email
+		color: #005b9e
+	.callback
+		margin-top: 5px
+		font-size: 14px
+		font-weight: 700
+
+
+.contacts__block_small
+	.contacts__block-title
+		font-size: 7.36px
+	.contacts__block-text
+		font-size: 14px
+		line-height: 20px
+
+
+.contacts__phones
+	font-size: 18px
+
+.contacts__phones, .contacts__fax
+	font-weight: 500
+	line-height: 22px
+	a
+		color: #071738
+
+
+.contacts__email
+	margin-top: 12px
+	a
+		color: #005b9e
+		font-size: 15px
+		border-bottom: 1px solid transparent
+		&:hover
+			border-bottom: 1px solid #005b9e
+
+
+.specialist
+	padding-top: 28px
+	border-top: 1px solid #B7BDC5
+.specialist__img, .specialist__content
+	float: left
+
+.specialist__content
+	margin-left: 25px
+
+.specialist__desc
+	font-size: 13px
+	line-height: 15px
+	color: #516274
+	margin-bottom: 9px
+	font-weight: 600
+
+.specialist__title
+	font-size: 18px
+	line-height: 15px
+	color: #12263b
+	font-weight: 800
+	margin-bottom: 12px
+
+.specialist__text
+	line-height: 20px
+	font-weight: 600
+
+.specialist__email
+	a
+		color: #076db8
+		border-bottom: 1px solid transparent
+		&:hover
+			border-bottom: 1px solid #076db8
+
+.specialist__phone
+	a
+		border-bottom: none !important
+		cursor: default
+
+
+.contacts__right
+	padding-top: 65px
+
+
+.feedback
+	position: relative
+	background: #17477A
+	color: white
+	font-weight: 600
+	::placeholder
+		color: #8cb7d8
+
+
+.feedback__title
+	color: white
+	padding-top: 32px
+	font-size: 20px
+	line-height: 16.45px
+	margin-bottom: 24px
+	font-weight: 800
+
+.feedback__name
+	display: block
+	width: 310px
+
+.feedback__input
+	display: inline-block
+
+
+.feedback__phone
+	width: 165px
+
+.feedback__email
+	width: 218px
+	margin-left: 3px
+
+.feedback__textarea-wrapper
+	::placeholder
+
+.feedback__textarea
+	display: block
+	resize: none
+	padding: 13.5px 17px
+	font-size: 16px
+	border: 1px solid #1D5985
+	width: 100%
+	height: 135px
+	color: white
+	background: #123C6A
+	transition: .3s
+	&:focus
+		border: 1px solid white
+
+.feedback__elements
+	padding-bottom: 19px
+
+.feedback__captcha
+	padding: 20px 0
+	background: url('../img/bg/captcha-shadow-top.jpg') repeat-x left top, url('../img/bg/captcha-shadow-bottom.jpg') repeat-x left bottom, #EAECF1
+
+.feedback__send
+	padding-top: 28px
+	padding-bottom: 29px
+	p
+		position: relative
+		display: inline-block
+		font-size: 12px
+		color: #b2bece
+		margin-left: 29px
+		top: 4px
+		a
+			color: #e2eaf5
+			border-bottom: 1px solid transparent
+			&:hover
+				border-bottom: 1px solid #e2eaf5
+
+.feedback__button
+	display: inline-block
+	box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.35)
+	&:hover
+		box-shadow: none
+
+.feedback__message
+	left: 0px
+	position: absolute
+	bottom: -19px
+	width: 350px !important
+
+.feedback__title, .feedback__elements, .feedback__captcha, .feedback__send
+	padding-left: 40px
+	padding-right: 40px
+
+
+
+
+.contacts__map
+	margin-bottom: -50px
+	iframe
+		border: none !important
+
+
+
+
+.gallery
+
+
+
+.gallery__list
+	.col
+		&:nth-of-type(3n - 1)
+			padding-left: 10px
+		&:nth-of-type(3n)
+			padding-left: 20px
+
+
+
+.gallery__item
+	display: block
+	width: 300px
+	height: 385px
+	border: 1px solid #C1CCDB
+	margin-bottom: 27px
+	&:hover
+		border: 1px solid #1992F5
+		.gallery__title
+			color: #0079d2
+
+
+
+.gallery__wrapper
+	position: relative
+
+.gallery__img
+	display: block
+	max-width: 100%
+
+.gallery__content
+	padding: 17px
+
+
+.gallery__title
+	font-weight: 700
+	font-size: 16px
+	line-height: 21px
+	transition: .3s
+	margin-bottom: 8px
+
+.gallery__desc
+	font-weight: 600
+	font-size: 13px
+	line-height: 16px
+	margin-bottom: 12px
+
+
+
+
+
+
+
+
+
+.album
+
+.album__main
+	padding-bottom: 43px
+	margin-bottom: 18px
+	border-bottom: 1px solid #CFD5E1
+
+.album__left
+	width: 430px
+	position: relative
+	img
+		display: block
+
+.album__right
+	width: 480px
+	float: right
+
+
+.album__content
+	p
+		line-height: 21px
+		font-weight: 600
+	.date
+		margin-top: 19px
+
+.album__title
+	font-size: 16px
+	font-weight: 800
+	margin-bottom: 10px
+
+
+
+.album
+	padding-bottom: 50px
+
+
+.album__list
+	.row
+		margin-left: -5px
+		margin-right: -5px
+	.col
+		padding-left: 5px
+		padding-right: 5px
+		width: 33.333%
+
+
+.album__item 
+	margin-bottom: 28px
+
+.album__img
+	width: 100%
+	height: 207px
+	position: relative
+	background: #BCC0C8
+	cursor: pointer
+	&:after
+		opacity: 0
+		position: absolute
+		content: ''
+		@include sprite($magnifying-glass-plus-white)
+		top: 83px
+		left: 134px
+		transition: .3s
+	&:hover
+		&:after
+			opacity: 1
+	img
+		display: block
+		max-width: 100%
+		height: 207px
+
+.album__count
+	position: absolute
+	left: 14px
+	bottom: 13px
+	color: white
+	font-weight: 800
+
+
+
+.album__desc
+	font-style: italic
+	font-size: 14px
+	line-height: 19px
+	font-weight: 600
+	margin-top: 11px
+	color: #5b6b73
+
+
+.filter
+	background: #EAECF1
+	padding: 35px 0 40px
+	&.filter_steps
+		padding-top: 73px
+		.filter__right
+			&:before
+				position: absolute
+				content: ''
+				@include sprite($arrow-right-blue)
+				top: -45px
+				left: -5px
+			.filter__step
+				left: 50px
+
+.filter__wrapper
+	border: 3px solid #164679
+	height: 498px
+	margin-left: -30px
+	margin-right: -30px
+
+.filter__step
+	position: absolute
+	top: -53px
+	left: 40px
+	line-height: 28px
+	font-size: 18px
+	font-weight: 600
+	span
+		font-size: 14px
+		width: 30px
+		height: 30px
+		font-weight: 800
+		border: 2px solid #0b1a2b
+		border-radius: 50%
+		text-align: center
+		margin-right: 12px
+
+.filter__nav
+	background: white
+	width: 382px
+	padding: 37px 40px 55px 32px
+	li
+		position: relative
+		display: block
+		list-style: none
+		margin-right: 0
+		border-radius: 2px
+		background: #EAECF1
+		padding: 13.5px 35px 13.5px 47px
+		margin-bottom: 12px
+		&:after
+			opacity: 0
+			content: ''
+			display: block
+			position: absolute
+			top: 0
+			right: -22px
+			width: 0
+			height: 0
+			border-style: solid
+			border-width: 26.5px 0 26.5px 22px
+			border-color: transparent transparent transparent #EAECF1
+		&:nth-of-type(4)
+			padding: 11.5px 35px 11.5px 47px
+			&:after
+				border-width: 37.5px 0 37.5px 22px
+		&:hover, &.tabs__nav-item_select
+			background: #1D97D1
+			margin-right: -40px
+			border-radius: 2px 0 0 2px
+			&:after
+				opacity: 1
+				border-color: transparent transparent transparent #1d98d1
+			span
+				color: white
+				border-bottom: 1px solid transparent
+			&:nth-of-type(1)
+				.icon
+					@include sprite($catalog-power-white)
+			&:nth-of-type(2)
+				.icon
+					@include sprite($catalog-snowflake-white)
+			&:nth-of-type(3)
+				.icon
+					@include sprite($catalog-ice-white)
+			&:nth-of-type(4)
+				.icon
+					@include sprite($catalog-tumblr-white)
+			&:nth-of-type(5)
+				.icon
+					@include sprite($catalog-fish-white)
+			&:nth-of-type(6)
+				.icon
+					@include sprite($catalog-meat-white)
+		&:last-of-type
+			margin-bottom: 0
+	.icon
+		position: absolute
+		top: 6px
+		left: 6.5px
+		transform: scale(.5)
+		&.icon-catalog-ice-black
+			top: 8px
+			left: 5px
+		&.icon-catalog-tumblr-black
+			top: 20px
+			left: 2px
+		&.icon-catalog-fish-black
+			top: 13px
+			left: 2.5px
+		&.icon-catalog-meat-black
+			left: 7px
+	span
+		display: inline
+		color: #282828
+		border-bottom: 1px dotted #282828
+		font-size: 20px
+		line-height: 26px
+		font-weight: 700
+
+.filter__right
+	width: 632px
+	border: none
+	padding: 42px 32px 0 50px
+	height: 492px
+	position: relative
+
+
+.filter__title
+	font-size: 34px
+	line-height: 40px
+	font-weight: 900
+	text-transform: uppercase
+	margin-bottom: 15px
+
+
+.filter__desc
+	line-height: 18px
+	font-weight: 500
+	padding-bottom: 15px
+	
+
+.filter__links
+	padding-top: 10px
+	border-top: 1px solid #A6ADBB
+	margin-right: 38px
+	li
+		font-size: 18px
+		line-height: 36px
+		font-weight: 600
+		list-style: none
+	a
+		color: #093668
+		&:hover
+			color: #0e99d5
+			border-bottom: 1px solid #0e99d5
+
+
+.filter__img
+	position: absolute
+	right: 0
+	bottom: 0
+
+
+.filter__elements
+	margin-top: 35px
+
+.elements
+	position: relative
+	background: white
+	position: relative
+	padding: 45px 50px 31px 30px
+
+.elements__title
+	position: absolute
+	font-size: 17px
+	color: white
+	font-weight: 600
+	background: #184476
+	top: -22px
+	left: 0
+	padding: 12px 52px 12px 29px
+
+.element
+	margin-bottom: 13px
+	&.element_in-one
+		margin-bottom: 0
+		+ .element
+			padding-bottom: 17px
+
+	&:last-of-type
+		margin-bottom: 0
+
+.elements__list
+	padding-bottom: 19px
+	border-bottom: 1px solid #DFE1E7
+	margin-bottom: 19px
+
+
+
+.element__name, .element__this
+	vertical-align: top
+
+
+.element__name
+	display: inline-block
+	width: 170px
+	font-weight: 600
+	font-size: 16px
+	line-height: 34px
+	&.element__name_big
+		width: 260px
+		+ .element__this
+			width: calc(100% - 264px)
+			.select
+				width: 100%
+	&.element__name-225
+		width: 225px
+		margin-right: 0
+	&.element__name-no-fix
+		width: auto
+		margin-right: 17px
+
+.element__this
+	display: inline-block
+	line-height: 34px
+	.increment
+		margin-right: 10px
+		&:last-of-type
+			margin-right: 0
+	.select
+		width: 270px
+	.select__title
+		padding-top: 0
+		padding-bottom: 0
+	.select__list-item
+		line-height: normal
+
+
+.elements__buttons
+	.button
+		display: inline-block
+		vertical-align: top
+	.button_gray
+		margin-left: 5px
+
+
+.increment
+	display: inline-block
+
+
+.increment__title, .increment__wrapper
+	display: inline-block
+
+.increment__wrapper
+	position: relative
+
+.increment__title
+	font-size: 16px
+	font-weight: 600
+
+.increment__input
+	width: 71px
+	background: #F4F6F9
+	border: 1px solid #D1D3D4
+	padding: 7.5px 20px 7.5px 8px
+	line-height: 0
+
+
+.increment__button
+	position: absolute
+	top: 0
+	right: 4px
+	width: 15px
+	height: 14px
+	background: url('../img/bg/increment.png')
+	cursor: pointer
+	transition: .3s
+	&:hover
+		opacity: .8
+	&:after
+		content: ''
+		position: absolute
+		top: 6px
+		right: 6px
+
+.increment__plus
+	top: 4px
+	&:after
+		width: 0
+		height: 0
+		border-style: solid
+		border-width: 0 2.5px 3px 2.5px
+		border-color: transparent transparent #000000 transparent
+		
+
+.increment__minus
+	top: 17px
+	&:after
+		width: 0
+		height: 0
+		border-style: solid
+		border-width: 3px 2.5px 0 2.5px
+		border-color: #000000 transparent transparent transparent
+
+
+
+.banner
+	margin-top: 30px
+	margin-bottom: 45px
+
+.banner__main
+	position: relative
+	margin-bottom: 10px
+	z-index: 2
+	img
+		width: 100%
+	.banner__content
+		width: 355px
+		position: absolute
+		top: 0
+		left: 0
+	.banner__title, .banner__desc
+		margin-left: 85px
+	.banner__title
+		font-size: 48px
+		line-height: 44px
+		font-weight: 600
+		margin-top: 60px
+	.banner__desc
+		font-size: 30px
+		line-height: 32px
+		font-weight: 500
+		margin-top: 20px
+		margin-bottom: 35px
+
+	.banner__button
+		border-bottom: none !important
+		background: #FFD93E
+		color: #15283d
+		font-size: 22px
+		font-weight: 600
+		width: 355px
+		line-height: 49px
+		&:before
+			width: 49px
+			height: 49px
+			background: #3DB3FB
+		&:after
+			top: 17px
+			right: 18px
+			@include sprite($arrow-right-white)
+		&:hover
+			color: white
+			background: #3DB3FB
+
+.banner__list
+	margin-left: -5px
+	margin-right: -5px
+	.col
+		padding-left: 5px
+		padding-right: 5px
+
+	.banner__item
+		display: block
+		z-index: 1
+		position: relative
+		height: 110px
+		color: white
+		border-bottom: none !important
+		&.banner__item_red
+			background: rgb(188,32,32)
+			background: -moz-linear-gradient(-45deg,  rgb(188,32,32) 0%, rgb(219,67,67) 100%)
+			background: -webkit-linear-gradient(-45deg,  rgb(188,32,32) 0%,rgb(219,67,67) 100%)
+			background: linear-gradient(135deg,  rgb(188,32,32) 0%,rgb(219,67,67) 100%)
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bc2020', endColorstr='#db4343',GradientType=1 )
+		&.banner__item_blue
+			background: rgb(15,66,121)
+			background: -moz-linear-gradient(-45deg,  rgb(15,66,121) 0%, rgb(0,91,158) 100%)
+			background: -webkit-linear-gradient(-45deg,  rgb(15,66,121) 0%,rgb(0,91,158) 100%)
+			background: linear-gradient(135deg,  rgb(15,66,121) 0%,rgb(0,91,158) 100%)
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0f4279', endColorstr='#005b9e',GradientType=1 )
+		&.banner__item_yellow
+			background: rgb(247,204,61)
+			background: -moz-linear-gradient(-45deg,  rgb(247,204,61) 0%, rgb(241,167,51) 100%)
+			background: -webkit-linear-gradient(-45deg,  rgb(247,204,61) 0%,rgb(241,167,51) 100%)
+			background: linear-gradient(135deg,  rgb(247,204,61) 0%,rgb(241,167,51) 100%)
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7cc3d', endColorstr='#f1a733',GradientType=1 )
+		&:hover
+
+	.banner__img
+		position: absolute
+		bottom: 0
+		left: 0
+		img
+			display: block
+
+	.banner__title, .banner__desc
+		margin-left: 92px
+
+	.banner__title
+		font-size: 20px
+		line-height: 20px
+		font-weight: 900
+		text-transform: uppercase
+		padding-top: 25px
+		margin-bottom: 12px
+	
+	.banner__desc
+		font-weight: 600
+		line-height: 16px
+
+
+.complex
+	&.complex_border
+		padding-bottom: 23px
+
+.complex__title
+	text-align: center
+	margin-top: 30px
+	margin-bottom: 35px
+
+
+.complex__list
+	.row
+		margin-left: -5px
+		margin-right: -5px
+		&:nth-of-type(2)
+			.col
+				&:nth-of-type(2)
+					.complex__name
+						padding-top: 52px
+	.col
+		padding-left: 5px
+		padding-right: 5px
+
+
+.complex__item
+	position: relative
+	display: block
+	height: 130px
+	background: rgb(240,242,247)
+	background: -moz-linear-gradient(top,  rgb(240,242,247) 0%, rgb(228,230,236) 100%)
+	background: -webkit-linear-gradient(top,  rgb(240,242,247) 0%,rgb(228,230,236) 100%)
+	background: linear-gradient(to bottom,  rgb(240,242,247) 0%,rgb(228,230,236) 100%)
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0f2f7', endColorstr='#e4e6ec',GradientType=0 )
+	border-bottom: none !important
+	margin-bottom: 10px
+	&:hover
+		box-shadow: inset 0px 0px 0px 2px rgba(57,117,181,1);
+		.complex__name
+			color: #0e447c
+.complex__img
+	width: 160px
+	position: absolute
+	left: 2px
+	top: 2px
+	img
+		display: block
+		max-height: 126px
+
+.complex__name
+	position: relative
+	font-size: 20px
+	line-height: 26px
+	font-weight: 700
+	width: 275px
+	margin-left: 160px
+	padding-top: 40px
+	transition: .3s
+
+
+.main-content
+	border-top: 1px solid #DADADA
+	padding-top: 50px
+	padding-bottom: 85px
+
+.main-content__left
+	width: 595px
+	p
+		font-size: 14px
+		line-height: 21px
+		font-weight: 600
+		color: #3b3b3b
+		margin-bottom: 20px
+		text-align: justify
+		&:last-of-type
+			margin-bottom: 0
+		a
+			color: #1D97D1
+			&:hover
+				border-bottom: 1px solid #1D97D1
+.main-content__right
+	float: right
+	width: 320px
+
+.main-content__title
+	margin-top: -5px
+	margin-bottom: 20px
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.interview
+	overflow: hidden
+
+
+
+.interview__wrapper
+	position: relative
+	color: white
+	height: 320px
+	padding: 30px 40px 23px
+	background: url('../img/bg/interview.jpg')
+
+
+.interview__title
+	font-size: 18px
+	line-height: 24px
+	font-weight: 800
+	padding-bottom: 25px
+
+
+.interview__list
+	padding: 15px 0
+	border-top: 1px solid #65B8DC
+	border-bottom: 1px solid #65B8DC
+	font-weight: 600
+	font-size: 15px
+	margin-bottom: 18px
+
+.interview__item
+	margin-bottom: 5px
+	&:last-of-type
+		margin-bottom: 0
+
+
+.interview__message
+	display: none
+	&.message_true
+		display: block
+		position: absolute
+		bottom: 18px
+		left: 0
+		line-height: 44px
+		width: 280px
+		padding-left: 40px
+		transition: .3s
+		transform: translateX(-280px)
+		.icon
+			margin-left: 5px
+.interview__button
+	line-height: 42px
+	box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.35)
+
+
+.interview__bottom
+	padding: 17px 40px
+	color: white
+	background: url('../img/bg/interview-shadow.png') repeat-x, #0A4D7F
+
+
+.interview__link
+	display: inline-block
+	cursor: pointer
+
+.interview__result, .interview__count
+	display: inline-block
+	vertical-align: top
+
+.interview__result
+	border-bottom: 1px dotted white
+
+.interview__count
+	margin-left: 11px
+	position: relative
+	font-size: 10px
+	.icon
+		position: relative
+		top: 1px
+		margin-right: 6px
+
+
+
+
+.catalog
+	&.catalog_dops
+		.row
+			padding-top: 10px
+	.row
+		padding-bottom: 15px
+		padding-top: 45px
+
+.catalog__item
+	padding-right: 40px
+
+.catalog__icon
+	width: 70px
+	height: 70px
+	line-height: 70px
+	border-radius: 3px
+	text-align: center
+	&.catalog__icon_blue
+		background: rgb(0,91,158)
+		background: -moz-linear-gradient(top,  rgb(0,91,158) 0%, rgb(14,69,123) 100%)
+		background: -webkit-linear-gradient(top,  rgb(0,91,158) 0%,rgb(14,69,123) 100%)
+		background: linear-gradient(to bottom,  rgb(0,91,158) 0%,rgb(14,69,123) 100%)
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#005b9e', endColorstr='#0e457b',GradientType=0 )
+	&.catalog__icon_red
+		background: rgb(204,33,36)
+		background: -moz-linear-gradient(top,  rgb(204,33,36) 0%, rgb(170,13,15) 100%)
+		background: -webkit-linear-gradient(top,  rgb(204,33,36) 0%,rgb(170,13,15) 100%)
+		background: linear-gradient(to bottom,  rgb(204,33,36) 0%,rgb(170,13,15) 100%)
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc2124', endColorstr='#aa0d0f',GradientType=0 )
+		+ .catalog__title
+			border-bottom: none
+			span
+				font-size: 16px
+				font-weight: 700
+				display: block
+			a
+				&:hover
+					color: #c61e21
+
+
+
+.catalog__title
+	font-size: 28px
+	line-height: 29px
+	font-weight: 700
+	margin-top: 20px
+	padding-bottom: 20px
+	a
+		border-bottom: none !important
+		&:hover
+			color: #0163ab
+	border-bottom: 1px solid #DEE2EA
+
+
+.catalog__list
+	padding-top: 15px
+	padding-bottom: 15px
+	li
+		display: block
+		list-style: none
+		font-size: 16px
+		line-height: 20px
+		font-weight: 600
+		margin-bottom: 12px
+		&:last-of-type
+			margin-bottom: 0
+	a
+		color: #0e437c
+		&:hover
+			color: #007fdc
+			border-bottom: 1px solid #007fdc
+
+
+.catalog__button
+	width: 215px
+	font-size: 13px
+	font-weight: 700
+	color: #172636
+	margin-top: 20px
+	span
+		position: relative
+		top: 2px
+
+
+.product
+	.title
+		margin-bottom: 25px
+
+.product__data
+	+ .product__info
+		margin-top: 25px
+
+.product__left
+	width: 440px
+
+.product__right
+	float: right
+	width: 430px
+	margin-right: 40px
+
+.product__images
+	border: 1px solid #E3E6EC
+	position: relative
+	position: relative
+	z-index: 2
+
+
+.images__list
+
+	text-align: center
+	padding: 15px 0 5px
+	&:hover
+		.icon-magnifying-glass-plus-gray
+			transform: scale(1.1)
+	a
+		display: none
+		border-bottom: none !important
+		&:first-of-type
+			display: block
+	.icon-magnifying-glass-plus-gray
+		position: absolute
+		bottom: 16px
+		right: 16px
+		transition: .3s
+	img
+		max-width: 100%
+.product__count
+	position: absolute
+	left: -1px
+	bottom: -1px
+	width: 55px
+	line-height: 34px
+	background: #11538C
+	color: white
+	font-weight: 800
+	text-align: center
+	.icon
+		margin-left: 5px
+	span
+		position: relative
+		top: 1px
+
+
+
+.product__icons
+	margin-top: 25px
+	text-align: center
+	.col
+		position: relative
+
+.icons__icon
+	// cursor: pointer
+	&:hover
+		+ .icons__content
+			opacity: 1
+			z-index: 15
+			transform: translateY(0px)
+.icons__item_regulation
+	&:hover
+		.icon
+			@include sprite($product-regulation-blue)
+.icons__item_helmet
+	&:hover
+		.icon
+			@include sprite($product-helmet-blue)
+.icons__item_screwdriver
+	&:hover
+		.icon
+			@include sprite($product-screwdriver-blue)
+.icons__item_plan
+	&:hover
+		.icon
+			@include sprite($product-plan-blue)
+
+
+.icons__content
+	opacity: 0
+	z-index: 0
+	position: absolute
+	width: 315px
+	height: 105px
+	font-size: 13px
+	line-height: 16px
+	top: -120px
+	left: -105px
+	color: white
+	background: #0B273B
+	padding: 20px 25px
+	transition: .3s
+	transform: translateY(-50px)
+	&:after
+		position: absolute
+		content: ''
+		left: calc(50% - 9px)
+		bottom: -9px
+		width: 0
+		height: 0
+		border-style: solid
+		border-width: 9px 11px 0 11px
+		border-color: #0b273b transparent transparent transparent
+
+.icons__item_helmet
+	.icons__content
+		display: block
+
+
+
+
+.product__right
+
+
+.characteristics__table-title
+	font-size: 16px
+	line-height: 22px
+	font-weight: 800
+	margin-top: -3px
+	margin-bottom: 5px
+
+
+.product__price
+	margin-top: 15px
+	.row-two
+		&.row-two_select
+			margin-top: 15px
+			margin-bottom: 15px
+			.price__dops
+				display: block
+			.price__desc
+				padding-left: 25px
+
+.price__title
+	font-weight: 800
+
+.price__count
+	font-size: 24px
+	font-weight: 800
+	color: #0e457b
+	margin-top: 2px
+	span
+		font-size: 34px
+		margin-right: 5px
+
+.price__dops
+	display: none
+.price__dops-title
+	font-weight: 800
+
+.price__dops-count
+	
+	font-size: 18px
+	font-weight: 800
+	color: #0e457b
+	span
+		font-size: 24px
+		margin-right: 5px
+
+.price__button
+	margin-left: 25px
+
+.price__desc
+	font-size: 12px
+	line-height: 14px
+	font-weight: 600
+	color: #32353f
+	padding-left: 0
+	margin-bottom: 15px
+
+
+.links-tab
+
+
+.links-tab__a
+	margin-top: 12px
+	font-weight: 700
+	color: #0088c8
+	cursor: pointer
+	&:hover
+		span
+			border-bottom: 1px dotted transparent
+	.icon
+		margin-right: 10px
+	span
+		border-bottom: 1px dotted #0088c8
+
+
+.product__desc
+	margin-top: 15px
+	line-height: 19px
+	font-weight: 500
+	p
+		margin-bottom: 22px
+		&:last-of-type
+			margin-bottom: 0
+
+
+.product__tabs
+	margin-top: 45px
+	.icon
+		margin-right: 8px
+	.tabs__nav
+		border-bottom: 1px solid #12263b
+	.tabs__nav-item
+		background: none
+		padding: 13px 0
+		margin-right: 40px
+		font-size: 20px
+		font-weight: 800
+		color: #0088c8
+		border-bottom: 2px solid transparent
+		&.tabs__nav-item_select
+			color: #12263b !important
+			border-bottom: 2px solid #12263b !important
+			.icon-gear-big-turquoise
+				@include sprite($gear-big-blue-dark)
+			&:hover
+				.icon-gear-big-turquoise
+					@include sprite($gear-big-blue-dark)
+		&:hover
+			color: #025798
+			border-bottom: 2px solid #025798
+			.icon-gear-big-turquoise
+				@include sprite($gear-big-blue)
+
+	.tabs__content
+		border: none
+		padding: 20px 0 0
+		margin-bottom: 15px
+		min-height: 1px
+	
+
+
+.docs
+	margin-top: -17px
+.docs__item
+	border-bottom: 1px solid #D4DDE7
+	padding-top: 16px
+	padding-bottom: 18px
+
+.docs__title
+	font-size: 16px
+	font-weight: 800
+	a
+		color: #12263b
+		display: inline
+		&:hover
+			color: #1592cd
+			border-bottom: 1px solid #1592cd
+
+
+.docs__desc
+	font-size: 13px
+	font-weight: 600
+	margin-top: 2px
+	span
+		cursor: default
+	span + span
+		margin-left: 10px
+
+
+.dupl
+	margin-top: 5px
+
+.sort__top
+
+
+
+.sort__count
+	font-weight: 600
+	span
+		font-weight: 800
+
+
+.sort__list
+	float: right
+	font-size: 13px
+	font-weight: 600
+	position: relative
+	top: -3px
+
+
+.sort__sort-type-1, .sort__sort-type-2
+	display: inline-block
+	span, .select
+		display: inline-block
+
+.sort__sort-type-1
+	span
+		// margin-right: 7px
+
+.sort__sort-type-2
+	margin-left: 12px
+	margin-right: 10px
+	cursor: pointer
+	transition: .3s
+	span
+		border-bottom: 1px dotted #12263b
+	&.sort__sort-type-2_select
+		color: #007cc4
+		span
+			border-bottom: 1px dotted #007cc4
+
+
+.dupl__bottom
+	.col
+		padding-left: 17px
+		padding-right: 17px 
+		&:nth-of-type(1)
+			width: 60%
+		&:nth-of-type(2)
+			width: 24%
+		&:nth-of-type(3)
+			width: 16%
+
+
+.dupl__titles
+	margin-top: 13px
+	.col
+		background: #DFE2E6
+		padding-top: 12px
+		padding-bottom: 12px
+		padding: 12px 17px
+		border-right: 2px solid white
+		&:last-of-type
+			border-right: none
+
+.dupl__list
+	.col
+		padding-top: 7px
+		padding-bottom: 7px
+		height: 82px
+		* 
+			vertical-align: middle
+
+.dupl__item
+	border: 1px solid transparent
+	border-bottom: 1px solid #DEE2E6
+	transition: .3s
+	&:hover
+		border: 1px solid #96BDD3
+
+.dupl__img
+	float: left
+	margin-right: 25px
+	width: 71px
+	line-height: 66px
+	text-align: center
+	img
+		display: inline-block
+		max-width: 100%
+
+.dupl__title
+	font-size: 16px
+	line-height: 24px
+	padding-top: 17px
+	a
+		color: #0f4279
+		&:hover
+			color: #0083ce
+			border-bottom: 1px solid #0083ce
+
+.dupl__desc, .dupl__price
+	padding-top: 22px
+
+
+
+.dupl__price-btn
+	margin-top: 10px
+
+
+
+
+
+
+.dops
+
+
+
+.dops__text
+	font-size: 16px
+	line-height: 22px
+	font-weight: 500
+	margin-bottom: 30px
+
+
+.dops__list-title
+	font-size: 18px
+	line-height: 22px
+	margin-bottom: 20px
+	font-weight: 800
+	color: #384358
+
+
+
+.dops__item
+	border: 1px solid #A6B6C0
+	margin-bottom: 7px
+	height: 212px
+	position: relative
+	&:last-of-type
+		margin-bottom: 0
+	&.dops__item_select
+		border: 2px solid #1F5D9C
+		.dops__img
+			margin-left: 74px
+			padding-top: 24px
+		.dops__content
+			padding-top: 24px
+		.dops__price
+			padding-top: 24px
+			padding-right: 15px
+		.dops__add
+			top: 79px
+			left: 20px
+
+.dops__img
+	margin-left: 75px
+	width: 190px
+	padding-top: 25px
+	img
+		display: block
+		margin-left: auto
+		margin-right: auto
+		max-width: 100%
+
+.dops__content
+	margin-left: 30px
+	width: 405px
+	padding-top: 25px
+
+.dops__title
+	font-size: 20px
+	line-height: 24px
+	font-weight: 700
+	color: #0f4279
+	margin-bottom: 15px
+
+.dops__desc
+	font-size: 13px
+	line-height: 18px
+	font-weight: 500
+
+
+.dops__strong
+	margin-top: 17px
+	font-weight: 700
+	font-size: 14px
+
+
+.dops__price
+	padding-top: 25px
+	float: right
+	height: 210px
+	padding-left: 20px
+	padding-right: 16px
+	border-left: 1px dotted #A6B6C0
+
+
+.dops__price-title
+	font-weight: 800
+	line-height: 22px
+	margin-bottom: 5px
+
+.dops__price-count
+	font-size: 20px
+	font-weight: 800
+	color: #0e457b
+	margin-bottom: 10px
+	span
+		font-size: 26px
+
+.dops__button
+	margin-bottom: 13px
+	transition: none
+
+.dops__checkbox
+	display: none
+	&:checked
+		+ .button
+			transition: none
+			color: white
+			background: rgb(0,91,158)
+			background: -moz-linear-gradient(to bottom, rgb(0,91,158) 0%,rgb(7,79,138) 100%)
+			background: -webkit-linear-gradient(to bottom, rgb(0,91,158) 0%,rgb(7,79,138) 100%)
+			background: linear-gradient(to bottom, rgb(0,91,158) 0%,rgb(7,79,138) 100%)
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#005b9e', endColorstr='#074f8a',GradientType=0 )
+			border: 1px solid #10548D
+			.icon
+				@include sprite($successfully)
+				margin-right: 4px
+			span
+			+ .dops__add
+				@include sprite($checkbox-big-checked)
+				+ .dops__clear
+					display: block
+.dops__add
+	position: absolute
+	top: 80px
+	left: 21px
+	cursor: pointer
+	@include sprite($checkbox-big-default)
+
+.dops__clear
+	display: none
+	font-weight: 800
+	color: #cb3d3d
+	cursor: pointer
+	text-align: center
+	// margin-top: 13px
+
+
+
+
+
+
+
+
+
+
+
+.product__info
+	border-top: 1px solid #D4DDE7
+	border-bottom: 1px solid #D4DDE7
+	padding: 14px 0
+	font-weight: 800
+	color: #272727
+	.icon
+		position: relative
+		margin-right: 12px
+		top: -1px
+
+.plashka
+	background: #F2F3F6
+	padding-top: 30px
+	padding-bottom: 30px
+	margin-top: 40px
+	.callback-block
+		top: -190px
+		right: auto
+		left: -10px
+	a
+		color: white
+	.row
+		color: white
+		background: #192A3C
+		padding: 22px 40px 22px
+	.col
+		position: relative
+		&:nth-of-type(1)
+			margin-right: 40px
+		&:nth-of-type(2)
+			margin-right: 30px
+		&:nth-of-type(4)
+			float: right
+
+
+.plashka__title
+	font-size: 20px
+	line-height: 22px
+	font-weight: 800
+	margin-bottom: 7px
+
+.plashka__desc
+	line-height: 22px
+	color: #bdcddd
+	font-weight: 700
+
+
+.plashka__federal-phone
+	font-size: 24px
+	line-height: 26px
+	font-weight: 800
+
+
+.plashka__federal-text
+	font-size: 12px
+	margin-top: 2px
+
+
+.plashka__phone
+	font-size: 18px
+	line-height: 22px
+	font-weight: 700
+	margin-bottom: 8px
+	position: relative
+
+
+.links
+	.container
+		padding-left: 0
+		padding-right: 0
+	ul
+		margin-top: 10px
+		li
+			font-size: 18px
+			line-height: 34px
+			font-weight: 700
+			color: #FFD93E
+			margin-left: 17px
+		a
+			color: #025899
+			&:hover
+				border-bottom: 1px solid #025899
+
+.links__left
+	width: 440px
+
+.links__right
+	float: right
+	width: 470px
+
+
+.links__title
+	font-size: 24px
+	line-height: 32px
+	font-weight: 800
+	padding: 5px 0 17px
+	border-bottom: 1px solid #DEE2EA
+
+.links__title_services
+	background: url('../img/bg/services.png') no-repeat 270px bottom
+
+
+.links__title_duplicates
+	background: url('../img/bg/duplicates.png') no-repeat 300px bottom
+
+
+
+.links__desc
+	color: #272727
+	font-weight: 700
+	line-height: 19px
+	margin-top: 17px
+
+
+.category
+	// display: none
+	
+
+.category__banner
+	position: relative
+	background: #EFF0F1
+	border-top: 1px solid #E1E6EC
+	height: 288px
+	.container
+		position: static
+
+.category__wrapper
+	position: relative
+	width: 630px
+	p
+		font-weight: 500
+		line-height: 22px
+		margin-bottom: 20px
+		&:last-of-type
+			margin-bottom: 0
+
+.category__banner-img
+	position: absolute
+	top: 0
+	right: 0
+	height: 288px
+
+.category__title
+	padding-top: 25px
+	padding-bottom: 15px
+	margin-bottom: 22px
+	border-bottom: 1px solid #C6C8CB
+
+.category__banner-button
+	position: absolute
+	right: -135px
+	bottom: 5px
+	border-bottom: 1px solid #889CB3
+	.icon
+		margin-left: 7px
+
+.category__list
+	padding-top: 45px
+	padding-bottom: 15px
+	border-bottom: 1px solid #DFE3EB
+
+.category__item
+	margin-bottom: 51px
+
+.category__img
+	position: relative
+	width: 110px
+	height: 110px
+	background: #EFF0F1
+	img
+		display: block
+
+.category__count
+	position: absolute
+	bottom: 0
+	right: 0
+	width: 27px
+	line-height: 27px
+	height: 27px
+	color: white
+	font-size: 13px
+	text-align: center
+	background: #F3B437
+
+.category__content
+	width: 310px
+	margin-left: 23px
+
+.category__subtitle
+	font-size: 20px
+	line-height: 25px
+	font-weight: 600
+	margin-bottom: 15px
+	margin-top: -3px
+	a
+		color: #0e437c
+		&:hover
+			color: #037ed9
+			border-color: #037ed9
+
+.category__text
+	line-height: 19px
+	font-weight: 500
+
+
+.text
+	margin-top: 30px
+	p
+		color: #3b3b3b
+		font-weight: 600
+		line-height: 20px
+		margin-bottom: 22px
+		text-align: justify
+		&:last-of-type
+			margin-bottom: 0
+	&.text_border-bottom
+		margin-top: 0
+		padding-bottom: 25px
+		border-bottom: 1px solid #E3E6EC
+		margin-bottom: 30px
+	h2
+		font-size: 20px
+		margin-top: 15px
+.text__title
+	font-size: 25px
+	line-height: 21px
+	font-weight: 800
+	margin-bottom: 25px
+
+.text__subtitle
+	font-size: 18px
+	line-height: 20px
+	font-weight: 700
+	color: #3b3b3b
+	margin-bottom: 5px
+
+
+.catalog__table
+	width: 100%
+	margin-top: 20px
+	text-align: center
+	font-weight: 600
+	th
+		font-size: 12px
+		line-height: 13px
+		font-weight: 800
+		background: #DFE2E6
+		border-right: 2px solid white
+		padding: 7px 0
+		&:last-of-type
+			border-right: none
+
+
+	td
+		position: relative
+		padding-top: 7px
+		padding-bottom: 7px
+		border-top: 1px solid transparent
+		border-right: none
+		border-bottom: 1px solid #DEE2E6
+		transition: .3s
+		&:before
+			opacity: 0
+			content: ''
+			position: absolute
+			top: -1px
+			left: 0
+			width: 100%
+			height: 1px
+			background: #96BDD3
+			transition: .3s
+		&:first-of-type
+			text-align: left
+			font-size: 16px
+			border-left: 1px solid transparent
+			img
+				display: block
+				max-width: 80px
+				margin-left: auto
+				margin-right: auto
+
+		&:last-of-type
+			border-right: 1px solid transparent
+	a
+		color: #0f4279
+		&:hover
+			color: #0083ce
+			border-color: #0083ce
+	.bg
+		padding: 19.5px 0
+		background: #F0F6FB
+		margin-right: 1px
+		margin-left: 1px
+	.img-wrap
+		width: 80px
+		display: inline-block
+		vertical-align: middle
+		margin-right: 20px
+	tr
+		position: relative
+		&:hover
+			td
+				// border-top: 1px solid red
+				border-bottom: 1px solid #96BDD3
+				&:before
+					opacity: 1
+				&:first-of-type
+					border-left: 1px solid #96BDD3
+					position: relative
+					
+				&:last-of-type
+					border-right: 1px solid #96BDD3
+
+.catalog-filter
+	margin-top: 32px
+	margin-bottom: 18px
+	.elements__title
+		top: 0
+		left: 0
+
+
+.catalog-filter__this
+	padding-top: 62px
+	border: 3px solid #164679
+	width: 590px
+	min-height: 267px
+
+.info-block
+	position: relative
+	width: 360px
+	color: white
+	padding: 20px 50px
+	background: url('../img/bg/info-block-shadow.png') repeat-y left top, #353841
+
+	a
+		color: white
+		border-bottom: none !important
+	.contacts-block
+		.number_federal
+			margin-top: 8px
+	.callback-block
+		right: 0
+		left: 40px
+		top: 12px
+
+
+.info-block__title
+	font-size: 17px
+	line-height: 24px
+	color: #37a8e9
+	font-weight: 800
+	margin-bottom: 12px
+
+.info-block__or
+	font-size: 12px
+	font-weight: 700
+	margin-top: 14px
+
+
+.sort-bottom
+	padding-top: 20px
+	padding-bottom: 20px
+	border-bottom: 2px solid #DFE3EB
+
+
+
+
+
+.catalog-banner
+	position: relative
+	margin-bottom: -10px
+	img
+		display: block
+
+.catalog-banner__content
+	position: absolute
+	top: 42px
+	left: 0
+	background: rgba(41,107,155, .85)
+	width: 550px
+	color: white
+	padding: 25px 40px 40px 70px 
+	border-bottom: 3px solid #DBBD39
+	p
+		font-size: 16px
+		line-height: 21px
+		font-weight: 700
+
+
+.catalog-banner__title
+	font-size: 30px
+	line-height: 30px
+	color: #efcd10
+	font-weight: 700
+	margin-bottom: 20px
+
+
+
+.img-x2
+	img
+		display: block
+		float: left
+		&:last-of-type
+			float: right
+
+
+
+.equipment
+	padding-bottom: 65px
+	border-bottom: 1px solid #CEDAE6
+	.row
+		&:first-of-type
+			margin-bottom: 45px
+
+.equipment__title	
+	font-size: 22px
+	line-height: 20px
+	color: #044a7d
+	text-transform: uppercase
+	font-weight: 800
+	margin-top: 40px
+	padding-bottom: 22px
+	border-bottom: 1px solid #CEDAE6
+	margin-bottom: 35px
+
+
+.equipment__item
+
+
+.equipment__img
+	position: relative
+	float: left
+	width: 115px
+	img
+		display: block
+.equipment__count
+	position: absolute
+	left: 0
+	top: 65px
+	width: 26px
+	height: 26px
+	line-height: 26px
+	text-align: center
+	font-weight: 800
+	color: white
+	background: #194577
+
+.equipment__content
+	float: left
+	padding-top: 3px
+	margin-left: 20px
+	width: 265px
+
+.equipment__subtitle
+	font-size: 20px
+	line-height: 27px
+	font-weight: 700
+	margin-bottom: 16px
+
+
+.equipment__button
+	border-bottom: none !important
+
+
+.slider
+	padding-bottom: 60px
+	border-bottom: 1px solid #CEDAE6
+	margin-bottom: 45px
+	.slick-arrow
+		&:before
+			display: none
+	.slick-prev
+		left: -50px
+	.slick-next
+		right: -40px
+.slider__item
+	padding-right: 10px
+	outline: none !important
+
+.slider__title
+	font-size: 22px
+	line-height: 20px
+	color: #044a7d
+	text-transform: uppercase
+	font-weight: 800
+	margin-top: 30px
+	padding-bottom: 35px
+
+.slider__img
+	margin-bottom: 15px
+	img
+		display: block
+
+
+.slider__list
+
+.slider__subtitle
+	font-size: 18px
+	line-height: 22px
+	font-weight: 700
+	margin-bottom: 12px
+
+.slider__desc
+	font-weight: 600
+	line-height: 18px
+	padding-right: 5px
+
+.catalog-big-button
+	margin-left: auto
+	margin-right: auto
+
+
+
+.catalog-search
+	color: white
+	background: #184576
+	padding: 24px 40px
+	margin-top: 5px
+	margin-bottom: 30px
+	::placeholer
+		color: #a5b3c6
+
+.catalog-search__title
+	display: inline-block
+	font-size: 20px
+	line-height: 42px
+	font-weight: 800
+	margin-right: 33px
+	+ .catalog-search__wrapper
+		display: inline-block
+		.catalog-search__input
+			width: 665px
+
+
+.catalog-search__wrapper
+	display: block
+	position: relative
+	vertical-align: top
+
+.catalog-search__input
+	display: block
+	background: white
+	width: 100%
+	padding: 0 115px 0 45px
+	line-height: 42px
+	font-size: 16px
+	font-weight: 600
+	border-radius: 30px
+
+.catalog-search__icon
+	position: absolute
+	top: 12px
+	left: 18px
+
+.catalog-search__button
+	position: absolute
+	top: 0
+	right: 0
+
+
+.search-list__phrase
+	font-size: 18px
+	font-weight: 700
+	margin-top: -10px
+	span
+		margin-left: 3px
+		color: #005b9e
+
+.search-list__count
+	font-size: 16px
+	font-weight: 600
+	border-top: 1px solid #E1E8EA
+	border-bottom: 2px solid #E1E8EA
+	padding: 15px 0
+	margin-top: 15px
+	span
+		font-weight: 700
+	
+.search-list__item
+	padding-top: 20px
+	padding-bottom: 17px
+	border-bottom: 1px solid #E1E8EA
+
+.search-list__num
+	float: left
+	font-size: 16px
+	font-weight: 600
+
+.search-list__content
+	float: right
+	width: calc(100% - 40px)
+	margin-top: -2px
+
+.search-list__title
+	font-size: 18px
+	font-weight: 600
+	margin-bottom: 10px
+
+.search-list__text
+	font-weight: 600
+	line-height: 21px
+
+.search-blue
+	color: white
+	background: #164679
+	padding-left: 3px
+	padding-right: 3px
+
+
+
+.callback-block
+
+
+
+
+
+
+
+
+
+
+
+.footer
+	.callback-block
+		right: auto
+		top: -145px
+		left: -5px
+
+
+
+.footer__top
+	background: #EAECF1
+	padding: 35px 0 45px
+
+
+.footer__title
+	font-size: 15px
+	font-weight: 800
+	margin-bottom: 15px
+
+
+.footer__nav
+	padding-right: 30px
+	li
+		list-style: none
+		display: block
+		font-weight: 600
+		line-height: 18px
+		margin-top: 12px
+	a
+		&:hover
+			color: #008ac8
+			border-bottom: 1px solid #008ac8
+
+
+
+.footer__logo
+	margin-right: 40px
+	a
+		border-bottom: none !important
+.footer__logo-desc
+	font-size: 16px
+	line-height: 20px
+	font-weight: 700
+	color: #625f5d
+
+.footer__phone
+	position: relative
+	padding-top: 22px
+
+
+.footer__phone-nums
+	font-size: 18px
+	line-height: 22px
+	font-weight: 800
+	a
+		border-bottom: none !important
+		cursor: default
+
+.footer__phone-text
+	font-size: 11px
+	color: #404040
+	margin-top: 2px
+	margin-bottom: 15px
+
+.footer__callback
+	font-weight: 700
+
+
+.footer__bottom
+	padding-top: 23px
+	padding-bottom: 20px
+	.clearfix
+		float: left
+
+
+.footer__phones
+	margin-left: 20px
+	font-size: 16px
+	font-weight: 800
+	padding-top: 20px
+	p
+		margin-bottom: 9px
+		&:last-of-type
+			margin-bottom: 0
+	a
+		cursor: default
+		border-bottom: none !important
+
+.footer__contacts
+	margin-left: 60px
+	font-size: 14px
+	font-weight: 600
+	color: #14181c
+	padding-top: 20px
+	p
+		margin-bottom: 14px
+		&:last-of-type
+			margin-bottom: 0
+	a
+		color: #0f4379
+		&:hover
+			border-color: #0f4379
+
+.footer__copy
+	border-top: 1px solid #EAECF1
+	padding-top: 20px
+	margin-top: 20px
+	font-size: 12px
+	font-weight: 600
+	color: #797C80
+	line-height: 17px
+	a
+		color: #0f4379
+		border-color: #0f4379
+		&:hover
+			border-color: transparent
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.text-center
+	text-align: center
+
+
+
+
+
+
+.radio
+	input
+		display: none
+		&:checked + label
+			&:before
+				@include sprite($radio-checked)
+	label
+		&:before
+			display: inline-block
+			content: ''
+			@include sprite($radio-default)
+			position: relative
+			top: 3px
+			margin-right: 10px
+
+
+
+.table
+	border-collapse: collapse
+	&.table_width
+		width: 100%
+
+.table_gray
+	font-weight: 600
+	margin-left: -2px
+	margin-top: -2px
+	margin-bottom: 10px
+	td
+		padding: 6px 17px
+		background: #EAECF1
+		border: 2px solid white
+		&:first-of-type
+			font-weight: 800
+
+
+
+
+
+.table_ladder-1
+	color: #32353f
+	margin-left: -2px
+	margin-top: -2px
+	td
+		font-weight: 500
+		border: 2px solid white
+		padding: 8px 45px 8px 15px
+		&:first-of-type
+			font-weight: 800
+		&:last-of-type
+			padding-right: 100px
+	tr
+		&:nth-of-type(odd)
+			td
+				&:first-of-type
+					background: #DADEE5
+				&:last-of-type
+					background: #E3E6EC
+		&:nth-of-type(even)
+			td
+				background: #E9EDF2
+
+.table_ladder-2
+	color: #32353f
+	margin-left: -2px
+	margin-top: -2px
+	tr
+		&:nth-of-type(odd)
+			td
+				background: #F2F4F8
+	td
+		padding: 5px 20px 5px 10px
+		background: #D5DDE8
+		border: 2px solid white
+	a
+		position: relative
+		color: #0088c8
+		border-bottom: 1px dashed #0088c8
+		top: 1px
+		&:hover
+			border-bottom: 1px dashed transparent
+
+.img
+	max-width: 100%
+	&.img-left
+		float: left
+		margin-right: 20px
+	&.img-right
+		float: right
+		margin-left: 20px
+	&.img-mb
+		margin-bottom: 20px
+
+
+.img-count
+	background: #FFD93F
+	font-weight: 700
+	width: 57px
+	height: 30px
+	line-height: 32px
+	position: absolute
+	right: 0
+	bottom: 0
+	text-align: center
+	color: #07315d
+	.icon
+		margin-left: 5px
+
+
+
+.date
+	display: inline-block
+	padding: 4px 10px
+	color: white
+	font-size: 13px
+	font-weight: 600
+	background: #174678
+	span
+		position: relative
+		top: 2px
+
+
+
+
+
+.message
+	
+
+.message_true
+	color: white
+	background: #3D9A2B
+	width: 215px
+	line-height: 37px
+	font-weight: 900
+	font-size: 15px
+	padding: 0 10px 0 24px
+	.icon-successfully
+		position: relative
+		margin-left: 8px
+		top: -1px
+
+
+
+
+
+.checkbox
+	display: inline-block
+	margin-right: 20px
+	&.checkbox_wrapper
+		width: 120px
+		margin-right: 0
+	&:last-of-type
+		margin-right: 0
+
+.checkbox__input
+	display: none
+	&:checked + .checkbox__label
+		&:before
+			@include sprite($checkbox-checked)
+
+
+
+.checkbox__label
+	display: inline-block
+	&:before
+		content: ''
+		position: relative
+		top: 1px
+		display: inline-block
+		margin-right: 8px
+		@include sprite($checkbox-default)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer
+	margin-top: 45px
+
+
+.pb40
+	padding-bottom: 40px
+
+
+#go-top
+	z-index: 2000
+	position: fixed
+	width: 43px
+	height: 43px
+	background: #1D97D1
+	right: 5%
+	bottom: 5%
+	text-align: center
+	padding-top: 10px
+	border-radius: 3px
+	cursor: pointer
+	transition: .3s
+	img
+		position: relative
+		top: 4px
+		width: 25px
+	&:hover
+		opacity: .7

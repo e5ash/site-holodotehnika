@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Title</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+		<script src='https://www.google.com/recaptcha/api.js'></script>
+		<!-- Styles -->
+		<link rel="stylesheet" href="css/libs.min.css">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/responsive.css">
+		<!-- /Styles -->
+		
+		<!-- Scripts -->
+		<script src="js/libs.min.js"></script>
+		<script src="js/scripts.js"></script>
+		<!-- /Scripts -->
+	</head>
+	<body>
+		<div id="go-top"><img src="img/up_scroll.svg" alt=""></div>
+		<div class="popup popup_interview">
+		    <div class="popup__container container">
+		        <div class="popup__window">
+		        	<div class="popup__window_step-1">
+			            <div class="popup__header">
+			                <div class="popup__title"><span>Для просмотра результатов голосования</span> оставьте свои контактные данные</div>
+			                <div class="popup__close"><i class="icon icon-cross-yellow"></i></div>
+			            </div>
+			            <div class="popup__body">
+							<input type="text" class="input_name input input_dark input_block" placeholder="Имя*">
+							<input type="text" class="input_email input input_dark input_block" placeholder="Эл.почта*">
+							<div class="button-step button button_block button_yellow">Перейти к просмотру<i class="icon icon-arrow-right-blue"></i></div>
+							<div class="desc">Нажимая кнопку “Перейти к просмотру” вы принимаете <br /><a href="">данное соглашение</a></div>
+			            </div>
+		            </div>
+		            <div class="popup__window_step-2">
+			            <div class="popup__header">
+			                <div class="popup__title"><span>тема опроса</span> Какую марку двигателя вы предподчёте?</div>
+			                <div class="popup__close"><i class="icon icon-cross-blue"></i></div>
+			            </div>
+			            <div class="popup__body">
+							<div class="interview-stat">
+								<div class="interview-stat__title">СТАТИСТИКА МНЕНИЙ</div>
+								<div class="interview-stat__list">
+									<div class="interview-stat__item">
+										<div class="interview-stat__subtitle">ЯМЗ</div>
+										<div class="row">
+											<div class="interview-stat__status col"><div></div></div>
+											<div class="interview-stat__count col"><span>5%</span> (11 голосов)</div>
+										</div>
+									</div>
+									<div class="interview-stat__item">
+										<div class="interview-stat__subtitle">ММЗ</div>
+										<div class="row">
+											<div class="interview-stat__status col"><div></div></div>
+											<div class="interview-stat__count col"><span>4%</span> (8 голосов)</div>
+										</div>
+									</div>
+									<div class="interview-stat__item">
+										<div class="interview-stat__subtitle">FAW</div>
+										<div class="row">
+											<div class="interview-stat__status col"><div></div></div>
+											<div class="interview-stat__count col"><span>11%</span> (23 голосов)</div>
+										</div>
+									</div>
+									<div class="interview-stat__item">
+										<div class="interview-stat__subtitle">Doosan</div>
+										<div class="row">
+											<div class="interview-stat__status col"><div></div></div>
+											<div class="interview-stat__count col"><span>54%</span> (118 голосов)</div>
+										</div>
+									</div>
+								</div>
+								<div class="interview-stat__bottom"><i class="icon icon-interview"></i>ВСЕГО: 145 голосов</div>
+							</div>
+							<div class="close-block">закрыть окно статистики</div>
+			            </div>
+			        </div>
+		        </div>
+		    </div>
+		    <div class="popup__bg"></div>
+		</div>
+		<div class="popup popup_feedback">
+		    <div class="popup__container container">
+		    	<div class="successfully">
+		    		<div class="popup__window">
+			            <div class="popup__header">
+			                <div class="popup__title">СООБЩЕНИЕ УСПЕШНО <br />ОТПРАВЛЕНО</div>
+			                <div class="popup__close"><i class="icon icon-cross-blue"></i></div>
+			            </div>
+			            <div class="popup__body">
+			            	<p>Ваше сообщение успешно отправлено. В <br />ближайшее время, наши специалисты с вами <br />свяжутся. Спасибо за интерес к нашей <br />компании.</p>
+							<div class="close-block">закрыть сообщение</div>
+			            </div>
+		            </div>
+	            </div>
+	            <div class="form">
+			        <div class="popup__window">
+			            <div class="popup__header">
+			                <div class="popup__title"><span>ЗАПРОС СТОИМОСТИ</span><span>Обратная связь</span></div>
+			                <div class="popup__desc">Заполните форму и нажмите кнопку “Отправить”. Как только наши менеджеры получат ваше сообщение, мы подготовим вам развёрнутый ответ.</div>
+			                <div class="popup__product">На товар: <span>Датчик давления масла д/двиг. Cummins 6C8,3/6L8,9</span></div>
+			                <div class="popup__close"><i class="icon icon-cross-blue"></i></div>
+			            </div>
+			            <div class="popup__body">
+			            	<div class="popup__wrapper">
+								<input type="text" class="input input-name input_requered" placeholder="Ваше имя*">
+								<input type="text" class="input input-org" placeholder="Организация">
+								<input type="text" class="input input-phone input_requered" placeholder="Телефон*">
+								<input type="text" class="input input-email" placeholder="Почта">
+								<textarea class="textarea textarea-comment" placeholder="Ваш вопрос или сообщение"></textarea>
+							</div>
+							<div class="row">
+								<div class="popup__button col"><button class="button button_block button_blue button_blue-s">ОТПРАВИТЬ</button></div>
+
+								<div class="popup__agreement col">Нажимая кнопку “Отправить” вы принимаете <br /><a href="">данное соглашение</a></div>
+							</div>
+						</div>
+			        </div>
+		        </div>
+		    </div>
+		    <div class="popup__bg"></div>
+		</div>
+		<div class="header">
+			<div class="panel">
+				<div class="container row">
+					<div class="panel__logo col"><a href="/"><img src="upload/logo/logo-1.png" alt=""></a></div>
+					<div class="panel__search col">
+						<div class="search-form">
+							<input type="text" placeholder="поиск по сайту"><button class="button"><i class="icon icon-magnifying-glass-yellow"></i></button>
+						</div>
+					</div>
+					<div class="panel__contacts col">
+						<div class="contacts-block">
+							<div class="number number_federal">
+								<p class="number__digits"><a href="">8 800 250 2545</a></p>
+								<p class="number__desc">бесплатно по всей России</p>
+							</div>
+							<div class="number number_landline">
+								<p class="number__digits"><a href="">+7 (423) 20-999-10</a></p>
+								<p class="number__desc"><span class="callback"><i class="icon icon-phone-turquoise"></i><span>заказать звонок</span></span></p>
+							</div>
+						</div>
+						<div class="contacts-block__callback-block callback-block">
+							<div class="callback-block__close">
+								<span></span><span></span>
+							</div>
+							<div class="callback-block__title">Запрос на звонок</div>
+							<input class="callback-block__input input input_block" placeholder="Ваше имя">
+							<input class="callback-block__input input input_block" placeholder="+7 (       )        -     -">
+							<div class="callback-block__button button button_block button_blue button_blue-s">ОТПРАВИТЬ</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="nav">
+				<div class="container">
+					<div class="nav-btn">
+						<div class="nav-btn__hum">
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
+						<div class="nav-btn__text">МЕНЮ</div>
+					</div>
+					<ul class="li_line">
+						<li>
+							<a href="">О КОМПАНИИ</a>
+							<ul>
+								<li><a href="">О компании</a></li>
+								<li><a href="">Производство</a></li>
+								<li><a href="">Инжиниринг</a></li>
+								<li><a href="">Вакансии</a></li>
+								<li><a href="">Новости</a></li>
+								<li><a href="">Видео</a></li>
+								<li class="nav__item_sub"><a href="">Подписаться на рассылку <i class="icon icon-sub-yellow"></i></a></li>
+							</ul>
+						</li>
+						<li class="nav__item_catalog">
+							<a href="">КАТАЛОГ ТОВАРОВ</a>
+							<ul>
+								<li>
+									<span class="icon-wrap"><i class="icon icon-catalog-power-white"></i></span>
+									<a href="">Силовая техника</a>
+									<ul>
+										<li><a href="">Дизельные генераторы</a></li>
+									</ul>
+								</li>
+								<li>
+									<span class="icon-wrap"><i class="icon icon-catalog-snowflake-white"></i></span>
+									<a href="">Холодильная техника</a>
+									<ul>
+										<li><a href="">Cкороморозильные плиточные аппараты</a></li>
+										<li><a href="">Камеры шоковой заморозки</a></li>
+										<li><a href="">Склады хранения</a></li>
+										<li><a href="">Компрессорно-конденсаторные агрегаты</a></li>
+										<li><a href="">Установки охлаждения (чиллеры)</a></li>
+										<li><a href="">Сушильные установки</a></li>
+										<li><a href="">Градирни вентиляторные</a></li>
+										<li><a href="">Блок-формы для заморозки</a></li>
+									</ul>
+								</li>
+								<li>
+									<span class="icon-wrap"><i class="icon icon-catalog-ice-white"></i></span>
+									<a href="">Льдогенераторы</a>
+									<ul>
+										<li><a href="">Генератор гранулированного льда</a></li>
+										<li><a href="">Генератор чешуйчатого льда</a></li>
+										<li><a href="">Генератор бинарного льда</a></li>
+										<li><a href="">Танк-накопитель для льда</a></li>
+									</ul>
+								</li>
+								<li>
+									<span class="icon-wrap"><i class="icon icon-catalog-tumblr-white"></i></span>
+									<a href="">Теплообменное оборудование</a>
+									<ul>
+										<li><a href="">Конденсаторы</a></li>
+										<li><a href="">Испарители</a></li>
+									</ul>
+								</li>
+								<li>
+									<span class="icon-wrap"><i class="icon icon-catalog-fish-white"></i></span>
+									<a href="">Первичная переработка</a>
+									<ul>
+										<li><a href="">Рыбонасос</a></li>
+										<li><a href="">Изотермический контейнер</a></li>
+										<li><a href="">Головоруб</a></li>
+										<li><a href="">Рыбомойка</a></li>
+										<li><a href="">Глазуровочная машина</a></li>
+										<li><a href="">Тузлучная установка</a></li>
+										<li><a href="">Икропробивочная машина</a></li>
+										<li><a href="">Машина посола и отжима икры</a></li>
+										<li><a href="">Измельчитель рыбных отходов</a></li>
+										<li><a href="">Мешкозашивочная машина</a></li>
+									</ul>
+								</li>
+								<li>
+									<span class="icon-wrap"><i class="icon icon-catalog-meat-white"></i></span>
+									<a href="">Глубокая переработка</a>
+									<ul>
+										<li><a href="">Дефростер</a></li>
+										<li><a href="">Филетировочная машина</a></li>
+										<li><a href="">Удалитель боковых костей</a></li>
+										<li><a href="">Шкуросъемная машина</a></li>
+										<li><a href="">Камера холодного копчения</a></li>
+										<li><a href="">Инъектор</a></li>
+										<li><a href="">Слайсер</a></li>
+										<li><a href="">Вакуумный упаковщик</a></li>
+										<li><a href="">Сушильная камера</a></li>
+										<li><a href="">Термоусадочное оборудование</a></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li class="in-2">
+							<a href="">КОМПЛЕКСНЫЕ РЕШЕНИЯ</a>
+							<ul>
+								<li><a href="">Линия разделки лососевых пород РПО-4ГБ</a></li>
+								<li><a href="">Линия сортировки и весового контроля</a></li>
+								<li><a href="">Линия тарировки и упаковки</a></li>
+							</ul>
+							<ul>
+								<li><a href="">Икорный цех</a></li>
+								<li><a href="">Автономный генератор бинарного льда</a></li>
+								<li><a href="">Морозильный комплекс с ЦСХ</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="">ЗАПАСНЫЕ ЧАСТИ</a>
+							<ul>
+								<li><a href="">ЗИП к силовой технике</a></li>
+								<li><a href="">ЗИП к холодильной технике</a></li>
+								<li><a href="">ЗИП к оборудованию по рыбопереработке</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="">УСЛУГИ</a>
+							<ul>
+								<li><a href="">Материально-техническое обеспечение</a></li>
+								<li><a href="">Монтаж и пусконаладка</a></li>
+								<li><a href="">Обучение</a></li>
+								<li><a href="">Ремонт</a></li>
+								<li><a href="">Лизинг</a></li>
+								<li><a href="">Доставка</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="">ГАЛЕРЕЯ</a>
+						</li>
+						<li>
+							<a href="">КОНТАКТЫ</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="main">
+			<div class="breadcrumbs">
+				<ul class="li_line container">
+					<li><a href="">Главная</a></li>
+					<li>Комплексные решения</li>
+				</ul>
+			</div>
+			<div class="container">
+				<h1 class="title">КОМПЛЕКСНЫЕ РЕШЕНИЯ</h1>
+				<div class="text text_border-bottom">
+					<p>Компания Холодотехника разрабатывает и производит специализированные решения для различных отраслей на базе дизельной техники собственного производства - насосных установок, силовых приводов и генераторов.</p>
+					<p>Инженеры Холодотехника снабжают технику необходимыми опциями, устанавливают на шасси, помещают в капоты и контейнеры. Техника полностью соответсвует отраслевым требованиям.</p>
+				</div>
+				<div class="complex complex_border">
+					<div class="complex__list">
+						<div class="row w2">
+							<div class="col">
+								<a href="" class="complex__item">
+									<div class="complex__img"><img src="upload/complex/1.jpg" alt=""></div>
+									<div class="complex__name">Линия разделки лососевых пород РПО-4ГБ</div>
+								</a>
+							</div>
+							<div class="col">
+								<a href="" class="complex__item">
+									<div class="complex__img"><img src="upload/complex/2.jpg" alt=""></div>
+									<div class="complex__name">Линия сортировки и весового контроля</div>
+								</a>
+							</div>
+						</div>
+						<div class="row w2">
+							<div class="col">
+								<a href="" class="complex__item">
+									<div class="complex__img"><img src="upload/complex/3.jpg" alt=""></div>
+									<div class="complex__name">Линия теарировки и упаковки</div>
+								</a>
+							</div>
+							<div class="col">
+								<a href="" class="complex__item">
+									<div class="complex__img"><img src="upload/complex/4.jpg" alt=""></div>
+									<div class="complex__name">Икорный цех</div>
+								</a>
+							</div>
+						</div>
+						<div class="row w2">
+							<div class="col">
+								<a href="" class="complex__item">
+									<div class="complex__img"><img src="upload/complex/5.jpg" alt=""></div>
+									<div class="complex__name">Автономный генератор бинарного льда</div>
+								</a>
+							</div>
+							<div class="col">
+								<a href="" class="complex__item">
+									<div class="complex__img"><img src="upload/complex/6.jpg" alt=""></div>
+									<div class="complex__name">Морозильный комплекс <br />с ЦСХ</div>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer">
+			<div class="footer__top">
+				<div class="container row w4">
+					<div class="col">
+						<div class="footer__title">КАТАЛОГ</div>
+						<div class="footer__nav">
+							<ul>
+								<li><a href="">Силовая техника</a></li>
+								<li><a href="">Холодильная техника </a></li>
+								<li><a href="">Льдогенераторы</a></li>
+								<li><a href="">Теплообменное оборудование</a></li>
+								<li><a href="">Первичная переработка</a></li>
+								<li><a href="">Глубокая переработка</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col">
+						<div class="footer__title">КОМПЛЕКСНЫЕ <br />РЕШЕНИЯ</div>
+						<div class="footer__nav">
+							<ul>
+								<li><a href="">Линия разделки лососевых пород РПО-4ГБ</a></li>
+								<li><a href="">Линия сортировки и весового контроля</a></li>
+								<li><a href="">Линия тарировки и упаковки</a></li>
+								<li><a href="">Икорный цех</a></li>
+								<li><a href="">Автономный генератор бинарного льда</a></li>
+								<li><a href="">Морозильный комплекс с ЦСХ</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col">
+						<div class="footer__title">ЗАПАСНЫЕ <br />ЧАСТИ</div>
+						<div class="footer__nav">
+							<ul>
+								<li><a href="">ЗИП к силовой технике</a></li>
+								<li><a href="">ЗИП к холодильной технике</a></li>
+								<li><a href="">ЗИП к оборудованию по рыбопереработке</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col">
+						<div class="footer__title">УСЛУГИ</div>
+						<div class="footer__nav">
+							<ul>
+								<li><a href="">Материально-техническое обеспечение</a></li>
+								<li><a href="">Монтаж и пусконаладка</a></li>
+								<li><a href="">Обучение</a></li>
+								<li><a href="">Ремонт</a></li>
+								<li><a href="">Лизинг</a></li>
+								<li><a href="">Доставка</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer__bottom container">
+				<div class="footer__content row">
+					<div class="footer__logo col"><a href=""><img src="upload/logo/logo-2.png" alt=""></a><div class="footer__logo-desc">Машины Вашего успеха</div></div>
+					<div class="clearfix">
+						<div class="footer__phone col">
+							<p class="footer__phone-nums"><a href="">8 800 250 2545</a></p>
+							<p class="footer__phone-text">бесплатно по всей России</p>
+							<div class="footer__callback callback"><i class="icon icon-phone-turquoise"></i><span>заказать звонок</span></div>
+							<div class="contacts-block__callback-block callback-block">
+								<div class="callback-block__close">
+									<span></span><span></span>
+								</div>
+								<div class="callback-block__title">Запрос на звонок</div>
+								<input class="callback-block__input input input_block" placeholder="Ваше имя">
+								<input class="callback-block__input input input_block" placeholder="+7 (       )        -     -">
+								<div class="callback-block__button button button_block button_blue button_blue-s">ОТПРАВИТЬ</div>
+							</div>
+						</div>
+						<div class="footer__phones col">
+							<p><a href="">+7 (423) 275-48-90</a></p>
+							<p><a href="">+7 (423) 272-99-71</a></p>
+							<p><a href="">+7 (423) 20-999-10</a></p>
+						</div>
+					</div>
+					<div class="footer__contacts col">
+						<p>г. Владивосток, Уссурийская 1, корпус 5</p>
+						<p><a href="" class="email">sale@holodtechno.ru</a></p>
+					</div>
+				</div>
+				<div class="footer__copy copy row w2">
+					<div class="col copy__content">
+						<p>© 2010-2017 ООО "Холодотехника"</p>
+						<p>Копирование материала с сайта запрещено без согласия с администратрации.</p>
+					</div>
+					<div class="col copy__dev col">
+						<p>Разработка сайта - <a href="//kefirok.ru/" target="_blank">Студия Кефирок</a></p>
+						<p>2017 год</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

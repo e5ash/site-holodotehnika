@@ -1,0 +1,18 @@
+// Accordion
+.accordion
+	margin-top: 10px
+	margin-bottom: 10px
+.accordion__item
+	display: block
+	margin-bottom: 5px
+	&:hover
+		> .accordion__list
+			display: block
+
+.accordion__list
+	.accordion__list
+		display: none
+		margin-left: 20px
+		transition: .3s
+		.accordion__item
+			margin-bottom: 2px

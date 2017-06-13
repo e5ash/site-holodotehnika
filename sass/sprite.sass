@@ -1,0 +1,876 @@
+// SASS variables are information about icon's compiled state, stored under its original file name
+//
+// .icon-home
+//   width: $icon-home-width
+//
+// The large array-like variables contain all information about a single icon
+// $icon-home: x y offset_x offset_y width height total_width total_height image_path
+//
+// At the bottom of this section, we provide information about the spritesheet itself
+// $spritesheet: width height image $spritesheet-sprites
+$arrow-down-name: 'arrow-down'
+$arrow-down-x: 238px
+$arrow-down-y: 133px
+$arrow-down-offset-x: -238px
+$arrow-down-offset-y: -133px
+$arrow-down-width: 9px
+$arrow-down-height: 6px
+$arrow-down-total-width: 258px
+$arrow-down-total-height: 238px
+$arrow-down-image: '../img/sprite.png'
+$arrow-down: (238px, 133px, -238px, -133px, 9px, 6px, 258px, 238px, '../img/sprite.png', 'arrow-down', )
+$arrow-left-bold-name: 'arrow-left-bold'
+$arrow-left-bold-x: 238px
+$arrow-left-bold-y: 139px
+$arrow-left-bold-offset-x: -238px
+$arrow-left-bold-offset-y: -139px
+$arrow-left-bold-width: 13px
+$arrow-left-bold-height: 19px
+$arrow-left-bold-total-width: 258px
+$arrow-left-bold-total-height: 238px
+$arrow-left-bold-image: '../img/sprite.png'
+$arrow-left-bold: (238px, 139px, -238px, -139px, 13px, 19px, 258px, 238px, '../img/sprite.png', 'arrow-left-bold', )
+$arrow-left-name: 'arrow-left'
+$arrow-left-x: 114px
+$arrow-left-y: 194px
+$arrow-left-offset-x: -114px
+$arrow-left-offset-y: -194px
+$arrow-left-width: 20px
+$arrow-left-height: 18px
+$arrow-left-total-width: 258px
+$arrow-left-total-height: 238px
+$arrow-left-image: '../img/sprite.png'
+$arrow-left: (114px, 194px, -114px, -194px, 20px, 18px, 258px, 238px, '../img/sprite.png', 'arrow-left', )
+$arrow-right-black-name: 'arrow-right-black'
+$arrow-right-black-x: 235px
+$arrow-right-black-y: 220px
+$arrow-right-black-offset-x: -235px
+$arrow-right-black-offset-y: -220px
+$arrow-right-black-width: 11px
+$arrow-right-black-height: 8px
+$arrow-right-black-total-width: 258px
+$arrow-right-black-total-height: 238px
+$arrow-right-black-image: '../img/sprite.png'
+$arrow-right-black: (235px, 220px, -235px, -220px, 11px, 8px, 258px, 238px, '../img/sprite.png', 'arrow-right-black', )
+$arrow-right-blue-2-name: 'arrow-right-blue-2'
+$arrow-right-blue-2-x: 251px
+$arrow-right-blue-2-y: 16px
+$arrow-right-blue-2-offset-x: -251px
+$arrow-right-blue-2-offset-y: -16px
+$arrow-right-blue-2-width: 7px
+$arrow-right-blue-2-height: 10px
+$arrow-right-blue-2-total-width: 258px
+$arrow-right-blue-2-total-height: 238px
+$arrow-right-blue-2-image: '../img/sprite.png'
+$arrow-right-blue-2: (251px, 16px, -251px, -16px, 7px, 10px, 258px, 238px, '../img/sprite.png', 'arrow-right-blue-2', )
+$arrow-right-blue-name: 'arrow-right-blue'
+$arrow-right-blue-x: 200px
+$arrow-right-blue-y: 124px
+$arrow-right-blue-offset-x: -200px
+$arrow-right-blue-offset-y: -124px
+$arrow-right-blue-width: 14px
+$arrow-right-blue-height: 12px
+$arrow-right-blue-total-width: 258px
+$arrow-right-blue-total-height: 238px
+$arrow-right-blue-image: '../img/sprite.png'
+$arrow-right-blue: (200px, 124px, -200px, -124px, 14px, 12px, 258px, 238px, '../img/sprite.png', 'arrow-right-blue', )
+$arrow-right-bold-name: 'arrow-right-bold'
+$arrow-right-bold-x: 238px
+$arrow-right-bold-y: 114px
+$arrow-right-bold-offset-x: -238px
+$arrow-right-bold-offset-y: -114px
+$arrow-right-bold-width: 13px
+$arrow-right-bold-height: 19px
+$arrow-right-bold-total-width: 258px
+$arrow-right-bold-total-height: 238px
+$arrow-right-bold-image: '../img/sprite.png'
+$arrow-right-bold: (238px, 114px, -238px, -114px, 13px, 19px, 258px, 238px, '../img/sprite.png', 'arrow-right-bold', )
+$arrow-right-white-name: 'arrow-right-white'
+$arrow-right-white-x: 238px
+$arrow-right-white-y: 164px
+$arrow-right-white-offset-x: -238px
+$arrow-right-white-offset-y: -164px
+$arrow-right-white-width: 11px
+$arrow-right-white-height: 16px
+$arrow-right-white-total-width: 258px
+$arrow-right-white-total-height: 238px
+$arrow-right-white-image: '../img/sprite.png'
+$arrow-right-white: (238px, 164px, -238px, -164px, 11px, 16px, 258px, 238px, '../img/sprite.png', 'arrow-right-white', )
+$book-name: 'book'
+$book-x: 154px
+$book-y: 194px
+$book-offset-x: -154px
+$book-offset-y: -194px
+$book-width: 20px
+$book-height: 16px
+$book-total-width: 258px
+$book-total-height: 238px
+$book-image: '../img/sprite.png'
+$book: (154px, 194px, -154px, -194px, 20px, 16px, 258px, 238px, '../img/sprite.png', 'book', )
+$catalog-fish-black-name: 'catalog-fish-black'
+$catalog-fish-black-x: 47px
+$catalog-fish-black-y: 194px
+$catalog-fish-black-offset-x: -47px
+$catalog-fish-black-offset-y: -194px
+$catalog-fish-black-width: 47px
+$catalog-fish-black-height: 26px
+$catalog-fish-black-total-width: 258px
+$catalog-fish-black-total-height: 238px
+$catalog-fish-black-image: '../img/sprite.png'
+$catalog-fish-black: (47px, 194px, -47px, -194px, 47px, 26px, 258px, 238px, '../img/sprite.png', 'catalog-fish-black', )
+$catalog-fish-white-name: 'catalog-fish-white'
+$catalog-fish-white-x: 0px
+$catalog-fish-white-y: 194px
+$catalog-fish-white-offset-x: 0px
+$catalog-fish-white-offset-y: -194px
+$catalog-fish-white-width: 47px
+$catalog-fish-white-height: 26px
+$catalog-fish-white-total-width: 258px
+$catalog-fish-white-total-height: 238px
+$catalog-fish-white-image: '../img/sprite.png'
+$catalog-fish-white: (0px, 194px, 0px, -194px, 47px, 26px, 258px, 238px, '../img/sprite.png', 'catalog-fish-white', )
+$catalog-ice-black-name: 'catalog-ice-black'
+$catalog-ice-black-x: 0px
+$catalog-ice-black-y: 156px
+$catalog-ice-black-offset-x: 0px
+$catalog-ice-black-offset-y: -156px
+$catalog-ice-black-width: 41px
+$catalog-ice-black-height: 38px
+$catalog-ice-black-total-width: 258px
+$catalog-ice-black-total-height: 238px
+$catalog-ice-black-image: '../img/sprite.png'
+$catalog-ice-black: (0px, 156px, 0px, -156px, 41px, 38px, 258px, 238px, '../img/sprite.png', 'catalog-ice-black', )
+$catalog-ice-white-name: 'catalog-ice-white'
+$catalog-ice-white-x: 41px
+$catalog-ice-white-y: 156px
+$catalog-ice-white-offset-x: -41px
+$catalog-ice-white-offset-y: -156px
+$catalog-ice-white-width: 41px
+$catalog-ice-white-height: 38px
+$catalog-ice-white-total-width: 258px
+$catalog-ice-white-total-height: 238px
+$catalog-ice-white-image: '../img/sprite.png'
+$catalog-ice-white: (41px, 156px, -41px, -156px, 41px, 38px, 258px, 238px, '../img/sprite.png', 'catalog-ice-white', )
+$catalog-meat-black-name: 'catalog-meat-black'
+$catalog-meat-black-x: 214px
+$catalog-meat-black-y: 0px
+$catalog-meat-black-offset-x: -214px
+$catalog-meat-black-offset-y: 0px
+$catalog-meat-black-width: 37px
+$catalog-meat-black-height: 41px
+$catalog-meat-black-total-width: 258px
+$catalog-meat-black-total-height: 238px
+$catalog-meat-black-image: '../img/sprite.png'
+$catalog-meat-black: (214px, 0px, -214px, 0px, 37px, 41px, 258px, 238px, '../img/sprite.png', 'catalog-meat-black', )
+$catalog-meat-white-name: 'catalog-meat-white'
+$catalog-meat-white-x: 214px
+$catalog-meat-white-y: 41px
+$catalog-meat-white-offset-x: -214px
+$catalog-meat-white-offset-y: -41px
+$catalog-meat-white-width: 37px
+$catalog-meat-white-height: 41px
+$catalog-meat-white-total-width: 258px
+$catalog-meat-white-total-height: 238px
+$catalog-meat-white-image: '../img/sprite.png'
+$catalog-meat-white: (214px, 41px, -214px, -41px, 37px, 41px, 258px, 238px, '../img/sprite.png', 'catalog-meat-white', )
+$catalog-power-black-name: 'catalog-power-black'
+$catalog-power-black-x: 44px
+$catalog-power-black-y: 112px
+$catalog-power-black-offset-x: -44px
+$catalog-power-black-offset-y: -112px
+$catalog-power-black-width: 40px
+$catalog-power-black-height: 44px
+$catalog-power-black-total-width: 258px
+$catalog-power-black-total-height: 238px
+$catalog-power-black-image: '../img/sprite.png'
+$catalog-power-black: (44px, 112px, -44px, -112px, 40px, 44px, 258px, 238px, '../img/sprite.png', 'catalog-power-black', )
+$catalog-power-white-name: 'catalog-power-white'
+$catalog-power-white-x: 84px
+$catalog-power-white-y: 112px
+$catalog-power-white-offset-x: -84px
+$catalog-power-white-offset-y: -112px
+$catalog-power-white-width: 40px
+$catalog-power-white-height: 44px
+$catalog-power-white-total-width: 258px
+$catalog-power-white-total-height: 238px
+$catalog-power-white-image: '../img/sprite.png'
+$catalog-power-white: (84px, 112px, -84px, -112px, 40px, 44px, 258px, 238px, '../img/sprite.png', 'catalog-power-white', )
+$catalog-snowflake-black-name: 'catalog-snowflake-black'
+$catalog-snowflake-black-x: 162px
+$catalog-snowflake-black-y: 112px
+$catalog-snowflake-black-offset-x: -162px
+$catalog-snowflake-black-offset-y: -112px
+$catalog-snowflake-black-width: 38px
+$catalog-snowflake-black-height: 43px
+$catalog-snowflake-black-total-width: 258px
+$catalog-snowflake-black-total-height: 238px
+$catalog-snowflake-black-image: '../img/sprite.png'
+$catalog-snowflake-black: (162px, 112px, -162px, -112px, 38px, 43px, 258px, 238px, '../img/sprite.png', 'catalog-snowflake-black', )
+$catalog-snowflake-white-name: 'catalog-snowflake-white'
+$catalog-snowflake-white-x: 124px
+$catalog-snowflake-white-y: 112px
+$catalog-snowflake-white-offset-x: -124px
+$catalog-snowflake-white-offset-y: -112px
+$catalog-snowflake-white-width: 38px
+$catalog-snowflake-white-height: 43px
+$catalog-snowflake-white-total-width: 258px
+$catalog-snowflake-white-total-height: 238px
+$catalog-snowflake-white-image: '../img/sprite.png'
+$catalog-snowflake-white: (124px, 112px, -124px, -112px, 38px, 43px, 258px, 238px, '../img/sprite.png', 'catalog-snowflake-white', )
+$catalog-tumblr-black-name: 'catalog-tumblr-black'
+$catalog-tumblr-black-x: 82px
+$catalog-tumblr-black-y: 156px
+$catalog-tumblr-black-offset-x: -82px
+$catalog-tumblr-black-offset-y: -156px
+$catalog-tumblr-black-width: 47px
+$catalog-tumblr-black-height: 33px
+$catalog-tumblr-black-total-width: 258px
+$catalog-tumblr-black-total-height: 238px
+$catalog-tumblr-black-image: '../img/sprite.png'
+$catalog-tumblr-black: (82px, 156px, -82px, -156px, 47px, 33px, 258px, 238px, '../img/sprite.png', 'catalog-tumblr-black', )
+$catalog-tumblr-white-name: 'catalog-tumblr-white'
+$catalog-tumblr-white-x: 129px
+$catalog-tumblr-white-y: 156px
+$catalog-tumblr-white-offset-x: -129px
+$catalog-tumblr-white-offset-y: -156px
+$catalog-tumblr-white-width: 47px
+$catalog-tumblr-white-height: 33px
+$catalog-tumblr-white-total-width: 258px
+$catalog-tumblr-white-total-height: 238px
+$catalog-tumblr-white-image: '../img/sprite.png'
+$catalog-tumblr-white: (129px, 156px, -129px, -156px, 47px, 33px, 258px, 238px, '../img/sprite.png', 'catalog-tumblr-white', )
+$checkbox-big-checked-name: 'checkbox-big-checked'
+$checkbox-big-checked-x: 214px
+$checkbox-big-checked-y: 139px
+$checkbox-big-checked-offset-x: -214px
+$checkbox-big-checked-offset-y: -139px
+$checkbox-big-checked-width: 24px
+$checkbox-big-checked-height: 25px
+$checkbox-big-checked-total-width: 258px
+$checkbox-big-checked-total-height: 238px
+$checkbox-big-checked-image: '../img/sprite.png'
+$checkbox-big-checked: (214px, 139px, -214px, -139px, 24px, 25px, 258px, 238px, '../img/sprite.png', 'checkbox-big-checked', )
+$checkbox-big-default-name: 'checkbox-big-default'
+$checkbox-big-default-x: 214px
+$checkbox-big-default-y: 114px
+$checkbox-big-default-offset-x: -214px
+$checkbox-big-default-offset-y: -114px
+$checkbox-big-default-width: 24px
+$checkbox-big-default-height: 25px
+$checkbox-big-default-total-width: 258px
+$checkbox-big-default-total-height: 238px
+$checkbox-big-default-image: '../img/sprite.png'
+$checkbox-big-default: (214px, 114px, -214px, -114px, 24px, 25px, 258px, 238px, '../img/sprite.png', 'checkbox-big-default', )
+$checkbox-checked-name: 'checkbox-checked'
+$checkbox-checked-x: 200px
+$checkbox-checked-y: 136px
+$checkbox-checked-offset-x: -200px
+$checkbox-checked-offset-y: -136px
+$checkbox-checked-width: 12px
+$checkbox-checked-height: 12px
+$checkbox-checked-total-width: 258px
+$checkbox-checked-total-height: 238px
+$checkbox-checked-image: '../img/sprite.png'
+$checkbox-checked: (200px, 136px, -200px, -136px, 12px, 12px, 258px, 238px, '../img/sprite.png', 'checkbox-checked', )
+$checkbox-default-name: 'checkbox-default'
+$checkbox-default-x: 239px
+$checkbox-default-y: 194px
+$checkbox-default-offset-x: -239px
+$checkbox-default-offset-y: -194px
+$checkbox-default-width: 12px
+$checkbox-default-height: 12px
+$checkbox-default-total-width: 258px
+$checkbox-default-total-height: 238px
+$checkbox-default-image: '../img/sprite.png'
+$checkbox-default: (239px, 194px, -239px, -194px, 12px, 12px, 258px, 238px, '../img/sprite.png', 'checkbox-default', )
+$clear-name: 'clear'
+$clear-x: 207px
+$clear-y: 194px
+$clear-offset-x: -207px
+$clear-offset-y: -194px
+$clear-width: 16px
+$clear-height: 16px
+$clear-total-width: 258px
+$clear-total-height: 238px
+$clear-image: '../img/sprite.png'
+$clear: (207px, 194px, -207px, -194px, 16px, 16px, 258px, 238px, '../img/sprite.png', 'clear', )
+$comment-name: 'comment'
+$comment-x: 106px
+$comment-y: 220px
+$comment-offset-x: -106px
+$comment-offset-y: -220px
+$comment-width: 15px
+$comment-height: 16px
+$comment-total-width: 258px
+$comment-total-height: 238px
+$comment-image: '../img/sprite.png'
+$comment: (106px, 220px, -106px, -220px, 15px, 16px, 258px, 238px, '../img/sprite.png', 'comment', )
+$cross-blue-name: 'cross-blue'
+$cross-blue-x: 223px
+$cross-blue-y: 194px
+$cross-blue-offset-x: -223px
+$cross-blue-offset-y: -194px
+$cross-blue-width: 16px
+$cross-blue-height: 16px
+$cross-blue-total-width: 258px
+$cross-blue-total-height: 238px
+$cross-blue-image: '../img/sprite.png'
+$cross-blue: (223px, 194px, -223px, -194px, 16px, 16px, 258px, 238px, '../img/sprite.png', 'cross-blue', )
+$cross-yellow-name: 'cross-yellow'
+$cross-yellow-x: 191px
+$cross-yellow-y: 194px
+$cross-yellow-offset-x: -191px
+$cross-yellow-offset-y: -194px
+$cross-yellow-width: 16px
+$cross-yellow-height: 16px
+$cross-yellow-total-width: 258px
+$cross-yellow-total-height: 238px
+$cross-yellow-image: '../img/sprite.png'
+$cross-yellow: (191px, 194px, -191px, -194px, 16px, 16px, 258px, 238px, '../img/sprite.png', 'cross-yellow', )
+$doc-name: 'doc'
+$doc-x: 214px
+$doc-y: 82px
+$doc-offset-x: -214px
+$doc-offset-y: -82px
+$doc-width: 32px
+$doc-height: 32px
+$doc-total-width: 258px
+$doc-total-height: 238px
+$doc-image: '../img/sprite.png'
+$doc: (214px, 82px, -214px, -82px, 32px, 32px, 258px, 238px, '../img/sprite.png', 'doc', )
+$gear-big-blue-dark-name: 'gear-big-blue-dark'
+$gear-big-blue-dark-x: 0px
+$gear-big-blue-dark-y: 220px
+$gear-big-blue-dark-offset-x: 0px
+$gear-big-blue-dark-offset-y: -220px
+$gear-big-blue-dark-width: 18px
+$gear-big-blue-dark-height: 18px
+$gear-big-blue-dark-total-width: 258px
+$gear-big-blue-dark-total-height: 238px
+$gear-big-blue-dark-image: '../img/sprite.png'
+$gear-big-blue-dark: (0px, 220px, 0px, -220px, 18px, 18px, 258px, 238px, '../img/sprite.png', 'gear-big-blue-dark', )
+$gear-big-blue-name: 'gear-big-blue'
+$gear-big-blue-x: 18px
+$gear-big-blue-y: 220px
+$gear-big-blue-offset-x: -18px
+$gear-big-blue-offset-y: -220px
+$gear-big-blue-width: 18px
+$gear-big-blue-height: 18px
+$gear-big-blue-total-width: 258px
+$gear-big-blue-total-height: 238px
+$gear-big-blue-image: '../img/sprite.png'
+$gear-big-blue: (18px, 220px, -18px, -220px, 18px, 18px, 258px, 238px, '../img/sprite.png', 'gear-big-blue', )
+$gear-big-turquoise-name: 'gear-big-turquoise'
+$gear-big-turquoise-x: 36px
+$gear-big-turquoise-y: 220px
+$gear-big-turquoise-offset-x: -36px
+$gear-big-turquoise-offset-y: -220px
+$gear-big-turquoise-width: 18px
+$gear-big-turquoise-height: 18px
+$gear-big-turquoise-total-width: 258px
+$gear-big-turquoise-total-height: 238px
+$gear-big-turquoise-image: '../img/sprite.png'
+$gear-big-turquoise: (36px, 220px, -36px, -220px, 18px, 18px, 258px, 238px, '../img/sprite.png', 'gear-big-turquoise', )
+$gear-blue-name: 'gear-blue'
+$gear-blue-x: 191px
+$gear-blue-y: 220px
+$gear-blue-offset-x: -191px
+$gear-blue-offset-y: -220px
+$gear-blue-width: 12px
+$gear-blue-height: 12px
+$gear-blue-total-width: 258px
+$gear-blue-total-height: 238px
+$gear-blue-image: '../img/sprite.png'
+$gear-blue: (191px, 220px, -191px, -220px, 12px, 12px, 258px, 238px, '../img/sprite.png', 'gear-blue', )
+$gear-key-name: 'gear-key'
+$gear-key-x: 94px
+$gear-key-y: 194px
+$gear-key-offset-x: -94px
+$gear-key-offset-y: -194px
+$gear-key-width: 20px
+$gear-key-height: 20px
+$gear-key-total-width: 258px
+$gear-key-total-height: 238px
+$gear-key-image: '../img/sprite.png'
+$gear-key: (94px, 194px, -94px, -194px, 20px, 20px, 258px, 238px, '../img/sprite.png', 'gear-key', )
+$img-count-black-name: 'img-count-black'
+$img-count-black-x: 121px
+$img-count-black-y: 220px
+$img-count-black-offset-x: -121px
+$img-count-black-offset-y: -220px
+$img-count-black-width: 16px
+$img-count-black-height: 14px
+$img-count-black-total-width: 258px
+$img-count-black-total-height: 238px
+$img-count-black-image: '../img/sprite.png'
+$img-count-black: (121px, 220px, -121px, -220px, 16px, 14px, 258px, 238px, '../img/sprite.png', 'img-count-black', )
+$img-count-white-name: 'img-count-white'
+$img-count-white-x: 90px
+$img-count-white-y: 220px
+$img-count-white-offset-x: -90px
+$img-count-white-offset-y: -220px
+$img-count-white-width: 16px
+$img-count-white-height: 16px
+$img-count-white-total-width: 258px
+$img-count-white-total-height: 238px
+$img-count-white-image: '../img/sprite.png'
+$img-count-white: (90px, 220px, -90px, -220px, 16px, 16px, 258px, 238px, '../img/sprite.png', 'img-count-white', )
+$info-name: 'info'
+$info-x: 251px
+$info-y: 0px
+$info-offset-x: -251px
+$info-offset-y: 0px
+$info-width: 7px
+$info-height: 16px
+$info-total-width: 258px
+$info-total-height: 238px
+$info-image: '../img/sprite.png'
+$info: (251px, 0px, -251px, 0px, 7px, 16px, 258px, 238px, '../img/sprite.png', 'info', )
+$interview-name: 'interview'
+$interview-x: 152px
+$interview-y: 220px
+$interview-offset-x: -152px
+$interview-offset-y: -220px
+$interview-width: 15px
+$interview-height: 12px
+$interview-total-width: 258px
+$interview-total-height: 238px
+$interview-image: '../img/sprite.png'
+$interview: (152px, 220px, -152px, -220px, 15px, 12px, 258px, 238px, '../img/sprite.png', 'interview', )
+$magnifying-glass-blue-name: 'magnifying-glass-blue'
+$magnifying-glass-blue-x: 137px
+$magnifying-glass-blue-y: 220px
+$magnifying-glass-blue-offset-x: -137px
+$magnifying-glass-blue-offset-y: -220px
+$magnifying-glass-blue-width: 15px
+$magnifying-glass-blue-height: 14px
+$magnifying-glass-blue-total-width: 258px
+$magnifying-glass-blue-total-height: 238px
+$magnifying-glass-blue-image: '../img/sprite.png'
+$magnifying-glass-blue: (137px, 220px, -137px, -220px, 15px, 14px, 258px, 238px, '../img/sprite.png', 'magnifying-glass-blue', )
+$magnifying-glass-plus-gray-name: 'magnifying-glass-plus-gray'
+$magnifying-glass-plus-gray-x: 214px
+$magnifying-glass-plus-gray-y: 164px
+$magnifying-glass-plus-gray-offset-x: -214px
+$magnifying-glass-plus-gray-offset-y: -164px
+$magnifying-glass-plus-gray-width: 24px
+$magnifying-glass-plus-gray-height: 24px
+$magnifying-glass-plus-gray-total-width: 258px
+$magnifying-glass-plus-gray-total-height: 238px
+$magnifying-glass-plus-gray-image: '../img/sprite.png'
+$magnifying-glass-plus-gray: (214px, 164px, -214px, -164px, 24px, 24px, 258px, 238px, '../img/sprite.png', 'magnifying-glass-plus-gray', )
+$magnifying-glass-plus-white-name: 'magnifying-glass-plus-white'
+$magnifying-glass-plus-white-x: 0px
+$magnifying-glass-plus-white-y: 112px
+$magnifying-glass-plus-white-offset-x: 0px
+$magnifying-glass-plus-white-offset-y: -112px
+$magnifying-glass-plus-white-width: 44px
+$magnifying-glass-plus-white-height: 44px
+$magnifying-glass-plus-white-total-width: 258px
+$magnifying-glass-plus-white-total-height: 238px
+$magnifying-glass-plus-white-image: '../img/sprite.png'
+$magnifying-glass-plus-white: (0px, 112px, 0px, -112px, 44px, 44px, 258px, 238px, '../img/sprite.png', 'magnifying-glass-plus-white', )
+$magnifying-glass-yellow-name: 'magnifying-glass-yellow'
+$magnifying-glass-yellow-x: 174px
+$magnifying-glass-yellow-y: 194px
+$magnifying-glass-yellow-offset-x: -174px
+$magnifying-glass-yellow-offset-y: -194px
+$magnifying-glass-yellow-width: 17px
+$magnifying-glass-yellow-height: 16px
+$magnifying-glass-yellow-total-width: 258px
+$magnifying-glass-yellow-total-height: 238px
+$magnifying-glass-yellow-image: '../img/sprite.png'
+$magnifying-glass-yellow: (174px, 194px, -174px, -194px, 17px, 16px, 258px, 238px, '../img/sprite.png', 'magnifying-glass-yellow', )
+$phone-blue-name: 'phone-blue'
+$phone-blue-x: 179px
+$phone-blue-y: 220px
+$phone-blue-offset-x: -179px
+$phone-blue-offset-y: -220px
+$phone-blue-width: 12px
+$phone-blue-height: 12px
+$phone-blue-total-width: 258px
+$phone-blue-total-height: 238px
+$phone-blue-image: '../img/sprite.png'
+$phone-blue: (179px, 220px, -179px, -220px, 12px, 12px, 258px, 238px, '../img/sprite.png', 'phone-blue', )
+$phone-turquoise-name: 'phone-turquoise'
+$phone-turquoise-x: 167px
+$phone-turquoise-y: 220px
+$phone-turquoise-offset-x: -167px
+$phone-turquoise-offset-y: -220px
+$phone-turquoise-width: 12px
+$phone-turquoise-height: 12px
+$phone-turquoise-total-width: 258px
+$phone-turquoise-total-height: 238px
+$phone-turquoise-image: '../img/sprite.png'
+$phone-turquoise: (167px, 220px, -167px, -220px, 12px, 12px, 258px, 238px, '../img/sprite.png', 'phone-turquoise', )
+$phone-yellow-name: 'phone-yellow'
+$phone-yellow-x: 203px
+$phone-yellow-y: 220px
+$phone-yellow-offset-x: -203px
+$phone-yellow-offset-y: -220px
+$phone-yellow-width: 12px
+$phone-yellow-height: 12px
+$phone-yellow-total-width: 258px
+$phone-yellow-total-height: 238px
+$phone-yellow-image: '../img/sprite.png'
+$phone-yellow: (203px, 220px, -203px, -220px, 12px, 12px, 258px, 238px, '../img/sprite.png', 'phone-yellow', )
+$plus-name: 'plus'
+$plus-x: 215px
+$plus-y: 220px
+$plus-offset-x: -215px
+$plus-offset-y: -220px
+$plus-width: 10px
+$plus-height: 10px
+$plus-total-width: 258px
+$plus-total-height: 238px
+$plus-image: '../img/sprite.png'
+$plus: (215px, 220px, -215px, -220px, 10px, 10px, 258px, 238px, '../img/sprite.png', 'plus', )
+$product-helmet-black-name: 'product-helmet-black'
+$product-helmet-black-x: 0px
+$product-helmet-black-y: 0px
+$product-helmet-black-offset-x: 0px
+$product-helmet-black-offset-y: 0px
+$product-helmet-black-width: 53px
+$product-helmet-black-height: 58px
+$product-helmet-black-total-width: 258px
+$product-helmet-black-total-height: 238px
+$product-helmet-black-image: '../img/sprite.png'
+$product-helmet-black: (0px, 0px, 0px, 0px, 53px, 58px, 258px, 238px, '../img/sprite.png', 'product-helmet-black', )
+$product-helmet-blue-name: 'product-helmet-blue'
+$product-helmet-blue-x: 53px
+$product-helmet-blue-y: 0px
+$product-helmet-blue-offset-x: -53px
+$product-helmet-blue-offset-y: 0px
+$product-helmet-blue-width: 53px
+$product-helmet-blue-height: 58px
+$product-helmet-blue-total-width: 258px
+$product-helmet-blue-total-height: 238px
+$product-helmet-blue-image: '../img/sprite.png'
+$product-helmet-blue: (53px, 0px, -53px, 0px, 53px, 58px, 258px, 238px, '../img/sprite.png', 'product-helmet-blue', )
+$product-plan-black-name: 'product-plan-black'
+$product-plan-black-x: 161px
+$product-plan-black-y: 0px
+$product-plan-black-offset-x: -161px
+$product-plan-black-offset-y: 0px
+$product-plan-black-width: 53px
+$product-plan-black-height: 53px
+$product-plan-black-total-width: 258px
+$product-plan-black-total-height: 238px
+$product-plan-black-image: '../img/sprite.png'
+$product-plan-black: (161px, 0px, -161px, 0px, 53px, 53px, 258px, 238px, '../img/sprite.png', 'product-plan-black', )
+$product-plan-blue-name: 'product-plan-blue'
+$product-plan-blue-x: 161px
+$product-plan-blue-y: 53px
+$product-plan-blue-offset-x: -161px
+$product-plan-blue-offset-y: -53px
+$product-plan-blue-width: 53px
+$product-plan-blue-height: 53px
+$product-plan-blue-total-width: 258px
+$product-plan-blue-total-height: 238px
+$product-plan-blue-image: '../img/sprite.png'
+$product-plan-blue: (161px, 53px, -161px, -53px, 53px, 53px, 258px, 238px, '../img/sprite.png', 'product-plan-blue', )
+$product-regulation-black-name: 'product-regulation-black'
+$product-regulation-black-x: 55px
+$product-regulation-black-y: 58px
+$product-regulation-black-offset-x: -55px
+$product-regulation-black-offset-y: -58px
+$product-regulation-black-width: 53px
+$product-regulation-black-height: 54px
+$product-regulation-black-total-width: 258px
+$product-regulation-black-total-height: 238px
+$product-regulation-black-image: '../img/sprite.png'
+$product-regulation-black: (55px, 58px, -55px, -58px, 53px, 54px, 258px, 238px, '../img/sprite.png', 'product-regulation-black', )
+$product-regulation-blue-name: 'product-regulation-blue'
+$product-regulation-blue-x: 108px
+$product-regulation-blue-y: 58px
+$product-regulation-blue-offset-x: -108px
+$product-regulation-blue-offset-y: -58px
+$product-regulation-blue-width: 53px
+$product-regulation-blue-height: 54px
+$product-regulation-blue-total-width: 258px
+$product-regulation-blue-total-height: 238px
+$product-regulation-blue-image: '../img/sprite.png'
+$product-regulation-blue: (108px, 58px, -108px, -58px, 53px, 54px, 258px, 238px, '../img/sprite.png', 'product-regulation-blue', )
+$product-screwdriver-black-name: 'product-screwdriver-black'
+$product-screwdriver-black-x: 106px
+$product-screwdriver-black-y: 0px
+$product-screwdriver-black-offset-x: -106px
+$product-screwdriver-black-offset-y: 0px
+$product-screwdriver-black-width: 55px
+$product-screwdriver-black-height: 54px
+$product-screwdriver-black-total-width: 258px
+$product-screwdriver-black-total-height: 238px
+$product-screwdriver-black-image: '../img/sprite.png'
+$product-screwdriver-black: (106px, 0px, -106px, 0px, 55px, 54px, 258px, 238px, '../img/sprite.png', 'product-screwdriver-black', )
+$product-screwdriver-blue-name: 'product-screwdriver-blue'
+$product-screwdriver-blue-x: 0px
+$product-screwdriver-blue-y: 58px
+$product-screwdriver-blue-offset-x: 0px
+$product-screwdriver-blue-offset-y: -58px
+$product-screwdriver-blue-width: 55px
+$product-screwdriver-blue-height: 54px
+$product-screwdriver-blue-total-width: 258px
+$product-screwdriver-blue-total-height: 238px
+$product-screwdriver-blue-image: '../img/sprite.png'
+$product-screwdriver-blue: (0px, 58px, 0px, -58px, 55px, 54px, 258px, 238px, '../img/sprite.png', 'product-screwdriver-blue', )
+$radio-checked-name: 'radio-checked'
+$radio-checked-x: 72px
+$radio-checked-y: 220px
+$radio-checked-offset-x: -72px
+$radio-checked-offset-y: -220px
+$radio-checked-width: 18px
+$radio-checked-height: 18px
+$radio-checked-total-width: 258px
+$radio-checked-total-height: 238px
+$radio-checked-image: '../img/sprite.png'
+$radio-checked: (72px, 220px, -72px, -220px, 18px, 18px, 258px, 238px, '../img/sprite.png', 'radio-checked', )
+$radio-default-name: 'radio-default'
+$radio-default-x: 54px
+$radio-default-y: 220px
+$radio-default-offset-x: -54px
+$radio-default-offset-y: -220px
+$radio-default-width: 18px
+$radio-default-height: 18px
+$radio-default-total-width: 258px
+$radio-default-total-height: 238px
+$radio-default-image: '../img/sprite.png'
+$radio-default: (54px, 220px, -54px, -220px, 18px, 18px, 258px, 238px, '../img/sprite.png', 'radio-default', )
+$regulation-name: 'regulation'
+$regulation-x: 200px
+$regulation-y: 112px
+$regulation-offset-x: -200px
+$regulation-offset-y: -112px
+$regulation-width: 14px
+$regulation-height: 12px
+$regulation-total-width: 258px
+$regulation-total-height: 238px
+$regulation-image: '../img/sprite.png'
+$regulation: (200px, 112px, -200px, -112px, 14px, 12px, 258px, 238px, '../img/sprite.png', 'regulation', )
+$snowflake-name: 'snowflake'
+$snowflake-x: 225px
+$snowflake-y: 220px
+$snowflake-offset-x: -225px
+$snowflake-offset-y: -220px
+$snowflake-width: 10px
+$snowflake-height: 10px
+$snowflake-total-width: 258px
+$snowflake-total-height: 238px
+$snowflake-image: '../img/sprite.png'
+$snowflake: (225px, 220px, -225px, -220px, 10px, 10px, 258px, 238px, '../img/sprite.png', 'snowflake', )
+$sub-blue-name: 'sub-blue'
+$sub-blue-x: 176px
+$sub-blue-y: 156px
+$sub-blue-offset-x: -176px
+$sub-blue-offset-y: -156px
+$sub-blue-width: 38px
+$sub-blue-height: 31px
+$sub-blue-total-width: 258px
+$sub-blue-total-height: 238px
+$sub-blue-image: '../img/sprite.png'
+$sub-blue: (176px, 156px, -176px, -156px, 38px, 31px, 258px, 238px, '../img/sprite.png', 'sub-blue', )
+$sub-yellow-name: 'sub-yellow'
+$sub-yellow-x: 134px
+$sub-yellow-y: 194px
+$sub-yellow-offset-x: -134px
+$sub-yellow-offset-y: -194px
+$sub-yellow-width: 20px
+$sub-yellow-height: 17px
+$sub-yellow-total-width: 258px
+$sub-yellow-total-height: 238px
+$sub-yellow-image: '../img/sprite.png'
+$sub-yellow: (134px, 194px, -134px, -194px, 20px, 17px, 258px, 238px, '../img/sprite.png', 'sub-yellow', )
+$successfully-name: 'successfully'
+$successfully-x: 238px
+$successfully-y: 180px
+$successfully-offset-x: -238px
+$successfully-offset-y: -180px
+$successfully-width: 12px
+$successfully-height: 8px
+$successfully-total-width: 258px
+$successfully-total-height: 238px
+$successfully-image: '../img/sprite.png'
+$successfully: (238px, 180px, -238px, -180px, 12px, 8px, 258px, 238px, '../img/sprite.png', 'successfully', )
+$spritesheet-width: 258px
+$spritesheet-height: 238px
+$spritesheet-image: '../img/sprite.png'
+$spritesheet-sprites: ($arrow-down, $arrow-left-bold, $arrow-left, $arrow-right-black, $arrow-right-blue-2, $arrow-right-blue, $arrow-right-bold, $arrow-right-white, $book, $catalog-fish-black, $catalog-fish-white, $catalog-ice-black, $catalog-ice-white, $catalog-meat-black, $catalog-meat-white, $catalog-power-black, $catalog-power-white, $catalog-snowflake-black, $catalog-snowflake-white, $catalog-tumblr-black, $catalog-tumblr-white, $checkbox-big-checked, $checkbox-big-default, $checkbox-checked, $checkbox-default, $clear, $comment, $cross-blue, $cross-yellow, $doc, $gear-big-blue-dark, $gear-big-blue, $gear-big-turquoise, $gear-blue, $gear-key, $img-count-black, $img-count-white, $info, $interview, $magnifying-glass-blue, $magnifying-glass-plus-gray, $magnifying-glass-plus-white, $magnifying-glass-yellow, $phone-blue, $phone-turquoise, $phone-yellow, $plus, $product-helmet-black, $product-helmet-blue, $product-plan-black, $product-plan-blue, $product-regulation-black, $product-regulation-blue, $product-screwdriver-black, $product-screwdriver-blue, $radio-checked, $radio-default, $regulation, $snowflake, $sub-blue, $sub-yellow, $successfully, )
+$spritesheet: (258px, 238px, '../img/sprite.png', $spritesheet-sprites, )
+
+// The provided mixins are intended to be used with the array-like variables
+//
+// .icon-home
+//   @include sprite-width($icon-home)
+//
+// .icon-email
+//   @include sprite($icon-email)
+//
+// Example usage in HTML:
+//   `display: block` sprite:
+//   <div class="icon-home"></div>
+//
+// To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+//   // CSS
+//   .icon {
+//     display: inline-block;
+//   }
+//
+//   // HTML
+//   <i class="icon icon-home"></i>
+@mixin sprite-width($sprite)
+  width: nth($sprite, 5)
+
+@mixin sprite-height($sprite)
+  height: nth($sprite, 6)
+
+@mixin sprite-position($sprite)
+  $sprite-offset-x: nth($sprite, 3)
+  $sprite-offset-y: nth($sprite, 4)
+  background-position: $sprite-offset-x  $sprite-offset-y
+
+@mixin sprite-image($sprite)
+  $sprite-image: nth($sprite, 9)
+  background-image: url(#{$sprite-image})
+
+@mixin sprite($sprite)
+  @include sprite-image($sprite)
+  @include sprite-position($sprite)
+  @include sprite-width($sprite)
+  @include sprite-height($sprite)
+
+// The `sprites` mixin generates identical output to the CSS template
+//   but can be overridden inside of SASS
+//
+// @include sprites($spritesheet-sprites)
+@mixin sprites($sprites)
+  @each $sprite in $sprites
+    $sprite-name: nth($sprite, 10)
+    .#{$sprite-name}
+      @include sprite($sprite)
+
+i.icon-arrow-down
+	@include sprite($arrow-down)
+i.icon-arrow-left-bold
+	@include sprite($arrow-left-bold)
+i.icon-arrow-left
+	@include sprite($arrow-left)
+i.icon-arrow-right-black
+	@include sprite($arrow-right-black)
+i.icon-arrow-right-blue-2
+	@include sprite($arrow-right-blue-2)
+i.icon-arrow-right-blue
+	@include sprite($arrow-right-blue)
+i.icon-arrow-right-bold
+	@include sprite($arrow-right-bold)
+i.icon-arrow-right-white
+	@include sprite($arrow-right-white)
+i.icon-book
+	@include sprite($book)
+i.icon-catalog-fish-black
+	@include sprite($catalog-fish-black)
+i.icon-catalog-fish-white
+	@include sprite($catalog-fish-white)
+i.icon-catalog-ice-black
+	@include sprite($catalog-ice-black)
+i.icon-catalog-ice-white
+	@include sprite($catalog-ice-white)
+i.icon-catalog-meat-black
+	@include sprite($catalog-meat-black)
+i.icon-catalog-meat-white
+	@include sprite($catalog-meat-white)
+i.icon-catalog-power-black
+	@include sprite($catalog-power-black)
+i.icon-catalog-power-white
+	@include sprite($catalog-power-white)
+i.icon-catalog-snowflake-black
+	@include sprite($catalog-snowflake-black)
+i.icon-catalog-snowflake-white
+	@include sprite($catalog-snowflake-white)
+i.icon-catalog-tumblr-black
+	@include sprite($catalog-tumblr-black)
+i.icon-catalog-tumblr-white
+	@include sprite($catalog-tumblr-white)
+i.icon-checkbox-big-checked
+	@include sprite($checkbox-big-checked)
+i.icon-checkbox-big-default
+	@include sprite($checkbox-big-default)
+i.icon-checkbox-checked
+	@include sprite($checkbox-checked)
+i.icon-checkbox-default
+	@include sprite($checkbox-default)
+i.icon-clear
+	@include sprite($clear)
+i.icon-comment
+	@include sprite($comment)
+i.icon-cross-blue
+	@include sprite($cross-blue)
+i.icon-cross-yellow
+	@include sprite($cross-yellow)
+i.icon-doc
+	@include sprite($doc)
+i.icon-gear-big-blue-dark
+	@include sprite($gear-big-blue-dark)
+i.icon-gear-big-blue
+	@include sprite($gear-big-blue)
+i.icon-gear-big-turquoise
+	@include sprite($gear-big-turquoise)
+i.icon-gear-blue
+	@include sprite($gear-blue)
+i.icon-gear-key
+	@include sprite($gear-key)
+i.icon-img-count-black
+	@include sprite($img-count-black)
+i.icon-img-count-white
+	@include sprite($img-count-white)
+i.icon-info
+	@include sprite($info)
+i.icon-interview
+	@include sprite($interview)
+i.icon-magnifying-glass-blue
+	@include sprite($magnifying-glass-blue)
+i.icon-magnifying-glass-plus-gray
+	@include sprite($magnifying-glass-plus-gray)
+i.icon-magnifying-glass-plus-white
+	@include sprite($magnifying-glass-plus-white)
+i.icon-magnifying-glass-yellow
+	@include sprite($magnifying-glass-yellow)
+i.icon-phone-blue
+	@include sprite($phone-blue)
+i.icon-phone-turquoise
+	@include sprite($phone-turquoise)
+i.icon-phone-yellow
+	@include sprite($phone-yellow)
+i.icon-plus
+	@include sprite($plus)
+i.icon-product-helmet-black
+	@include sprite($product-helmet-black)
+i.icon-product-helmet-blue
+	@include sprite($product-helmet-blue)
+i.icon-product-plan-black
+	@include sprite($product-plan-black)
+i.icon-product-plan-blue
+	@include sprite($product-plan-blue)
+i.icon-product-regulation-black
+	@include sprite($product-regulation-black)
+i.icon-product-regulation-blue
+	@include sprite($product-regulation-blue)
+i.icon-product-screwdriver-black
+	@include sprite($product-screwdriver-black)
+i.icon-product-screwdriver-blue
+	@include sprite($product-screwdriver-blue)
+i.icon-radio-checked
+	@include sprite($radio-checked)
+i.icon-radio-default
+	@include sprite($radio-default)
+i.icon-regulation
+	@include sprite($regulation)
+i.icon-snowflake
+	@include sprite($snowflake)
+i.icon-sub-blue
+	@include sprite($sub-blue)
+i.icon-sub-yellow
+	@include sprite($sub-yellow)
+i.icon-successfully
+	@include sprite($successfully)
+i.icon
+	display: inline-block
+	vertical-align: middle

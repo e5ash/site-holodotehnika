@@ -1,0 +1,868 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Title</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+		<script src='https://www.google.com/recaptcha/api.js'></script>
+		<!-- Styles -->
+		<link rel="stylesheet" href="css/libs.min.css">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/responsive.css">
+		<!-- /Styles -->
+		
+		<!-- Scripts -->
+		<script src="js/libs.min.js"></script>
+		<script src="js/scripts.js"></script>
+		<!-- /Scripts -->
+	</head>
+	<body>
+		<div id="go-top"><img src="img/up_scroll.svg" alt=""></div>
+		<div class="popup popup_interview">
+		    <div class="popup__container container">
+		        <div class="popup__window">
+		        	<div class="popup__window_step-1">
+			            <div class="popup__header">
+			                <div class="popup__title"><span>Для просмотра результатов голосования</span> оставьте свои контактные данные</div>
+			                <div class="popup__close"><i class="icon icon-cross-yellow"></i></div>
+			            </div>
+			            <div class="popup__body">
+							<input type="text" class="input_name input input_dark input_block" placeholder="Имя*">
+							<input type="text" class="input_email input input_dark input_block" placeholder="Эл.почта*">
+							<div class="button-step button button_block button_yellow">Перейти к просмотру<i class="icon icon-arrow-right-blue"></i></div>
+							<div class="desc">Нажимая кнопку “Перейти к просмотру” вы принимаете <br /><a href="">данное соглашение</a></div>
+			            </div>
+		            </div>
+		            <div class="popup__window_step-2">
+			            <div class="popup__header">
+			                <div class="popup__title"><span>тема опроса</span> Какую марку двигателя вы предподчёте?</div>
+			                <div class="popup__close"><i class="icon icon-cross-blue"></i></div>
+			            </div>
+			            <div class="popup__body">
+							<div class="interview-stat">
+								<div class="interview-stat__title">СТАТИСТИКА МНЕНИЙ</div>
+								<div class="interview-stat__list">
+									<div class="interview-stat__item">
+										<div class="interview-stat__subtitle">ЯМЗ</div>
+										<div class="row">
+											<div class="interview-stat__status col"><div></div></div>
+											<div class="interview-stat__count col"><span>5%</span> (11 голосов)</div>
+										</div>
+									</div>
+									<div class="interview-stat__item">
+										<div class="interview-stat__subtitle">ММЗ</div>
+										<div class="row">
+											<div class="interview-stat__status col"><div></div></div>
+											<div class="interview-stat__count col"><span>4%</span> (8 голосов)</div>
+										</div>
+									</div>
+									<div class="interview-stat__item">
+										<div class="interview-stat__subtitle">FAW</div>
+										<div class="row">
+											<div class="interview-stat__status col"><div></div></div>
+											<div class="interview-stat__count col"><span>11%</span> (23 голосов)</div>
+										</div>
+									</div>
+									<div class="interview-stat__item">
+										<div class="interview-stat__subtitle">Doosan</div>
+										<div class="row">
+											<div class="interview-stat__status col"><div></div></div>
+											<div class="interview-stat__count col"><span>54%</span> (118 голосов)</div>
+										</div>
+									</div>
+								</div>
+								<div class="interview-stat__bottom"><i class="icon icon-interview"></i>ВСЕГО: 145 голосов</div>
+							</div>
+							<div class="close-block">закрыть окно статистики</div>
+			            </div>
+			        </div>
+		        </div>
+		    </div>
+		    <div class="popup__bg"></div>
+		</div>
+		<div class="popup popup_feedback">
+		    <div class="popup__container container">
+		    	<div class="successfully">
+		    		<div class="popup__window">
+			            <div class="popup__header">
+			                <div class="popup__title">СООБЩЕНИЕ УСПЕШНО <br />ОТПРАВЛЕНО</div>
+			                <div class="popup__close"><i class="icon icon-cross-blue"></i></div>
+			            </div>
+			            <div class="popup__body">
+			            	<p>Ваше сообщение успешно отправлено. В <br />ближайшее время, наши специалисты с вами <br />свяжутся. Спасибо за интерес к нашей <br />компании.</p>
+							<div class="close-block">закрыть сообщение</div>
+			            </div>
+		            </div>
+	            </div>
+	            <div class="form">
+			        <div class="popup__window">
+			            <div class="popup__header">
+			                <div class="popup__title"><span>ЗАПРОС СТОИМОСТИ</span><span>Обратная связь</span></div>
+			                <div class="popup__desc">Заполните форму и нажмите кнопку “Отправить”. Как только наши менеджеры получат ваше сообщение, мы подготовим вам развёрнутый ответ.</div>
+			                <div class="popup__product">На товар: <span>Датчик давления масла д/двиг. Cummins 6C8,3/6L8,9</span></div>
+			                <div class="popup__close"><i class="icon icon-cross-blue"></i></div>
+			            </div>
+			            <div class="popup__body">
+			            	<div class="popup__wrapper">
+								<input type="text" class="input input-name input_requered" placeholder="Ваше имя*">
+								<input type="text" class="input input-org" placeholder="Организация">
+								<input type="text" class="input input-phone input_requered" placeholder="Телефон*">
+								<input type="text" class="input input-email" placeholder="Почта">
+								<textarea class="textarea textarea-comment" placeholder="Ваш вопрос или сообщение"></textarea>
+							</div>
+							<div class="row">
+								<div class="popup__button col"><button class="button button_block button_blue button_blue-s">ОТПРАВИТЬ</button></div>
+
+								<div class="popup__agreement col">Нажимая кнопку “Отправить” вы принимаете <br /><a href="">данное соглашение</a></div>
+							</div>
+						</div>
+			        </div>
+		        </div>
+		    </div>
+		    <div class="popup__bg"></div>
+		</div>
+		<div class="header">
+			<div class="panel">
+				<div class="container row">
+					<div class="panel__logo col"><a href="/"><img src="upload/logo/logo-1.png" alt=""></a></div>
+					<div class="panel__search col">
+						<div class="search-form">
+							<input type="text" placeholder="поиск по сайту"><button class="button"><i class="icon icon-magnifying-glass-yellow"></i></button>
+						</div>
+					</div>
+					<div class="panel__contacts col">
+						<div class="contacts-block">
+							<div class="number number_federal">
+								<p class="number__digits"><a href="">8 800 250 2545</a></p>
+								<p class="number__desc">бесплатно по всей России</p>
+							</div>
+							<div class="number number_landline">
+								<p class="number__digits"><a href="">+7 (423) 20-999-10</a></p>
+								<p class="number__desc"><span class="callback"><i class="icon icon-phone-turquoise"></i><span>заказать звонок</span></span></p>
+							</div>
+						</div>
+						<div class="contacts-block__callback-block callback-block">
+							<div class="callback-block__close">
+								<span></span><span></span>
+							</div>
+							<div class="callback-block__title">Запрос на звонок</div>
+							<input class="callback-block__input input input_block" placeholder="Ваше имя">
+							<input class="callback-block__input input input_block" placeholder="+7 (       )        -     -">
+							<div class="callback-block__button button button_block button_blue button_blue-s">ОТПРАВИТЬ</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="nav">
+				<div class="container">
+					<div class="nav-btn">
+						<div class="nav-btn__hum">
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
+						<div class="nav-btn__text">МЕНЮ</div>
+					</div>
+					<ul class="li_line">
+						<li>
+							<a href="">О КОМПАНИИ</a>
+							<ul>
+								<li><a href="">О компании</a></li>
+								<li><a href="">Производство</a></li>
+								<li><a href="">Инжиниринг</a></li>
+								<li><a href="">Вакансии</a></li>
+								<li><a href="">Новости</a></li>
+								<li><a href="">Видео</a></li>
+								<li class="nav__item_sub"><a href="">Подписаться на рассылку <i class="icon icon-sub-yellow"></i></a></li>
+							</ul>
+						</li>
+						<li class="nav__item_catalog">
+							<a href="">КАТАЛОГ ТОВАРОВ</a>
+							<ul>
+								<li>
+									<span class="icon-wrap"><i class="icon icon-catalog-power-white"></i></span>
+									<a href="">Силовая техника</a>
+									<ul>
+										<li><a href="">Дизельные генераторы</a></li>
+									</ul>
+								</li>
+								<li>
+									<span class="icon-wrap"><i class="icon icon-catalog-snowflake-white"></i></span>
+									<a href="">Холодильная техника</a>
+									<ul>
+										<li><a href="">Cкороморозильные плиточные аппараты</a></li>
+										<li><a href="">Камеры шоковой заморозки</a></li>
+										<li><a href="">Склады хранения</a></li>
+										<li><a href="">Компрессорно-конденсаторные агрегаты</a></li>
+										<li><a href="">Установки охлаждения (чиллеры)</a></li>
+										<li><a href="">Сушильные установки</a></li>
+										<li><a href="">Градирни вентиляторные</a></li>
+										<li><a href="">Блок-формы для заморозки</a></li>
+									</ul>
+								</li>
+								<li>
+									<span class="icon-wrap"><i class="icon icon-catalog-ice-white"></i></span>
+									<a href="">Льдогенераторы</a>
+									<ul>
+										<li><a href="">Генератор гранулированного льда</a></li>
+										<li><a href="">Генератор чешуйчатого льда</a></li>
+										<li><a href="">Генератор бинарного льда</a></li>
+										<li><a href="">Танк-накопитель для льда</a></li>
+									</ul>
+								</li>
+								<li>
+									<span class="icon-wrap"><i class="icon icon-catalog-tumblr-white"></i></span>
+									<a href="">Теплообменное оборудование</a>
+									<ul>
+										<li><a href="">Конденсаторы</a></li>
+										<li><a href="">Испарители</a></li>
+									</ul>
+								</li>
+								<li>
+									<span class="icon-wrap"><i class="icon icon-catalog-fish-white"></i></span>
+									<a href="">Первичная переработка</a>
+									<ul>
+										<li><a href="">Рыбонасос</a></li>
+										<li><a href="">Изотермический контейнер</a></li>
+										<li><a href="">Головоруб</a></li>
+										<li><a href="">Рыбомойка</a></li>
+										<li><a href="">Глазуровочная машина</a></li>
+										<li><a href="">Тузлучная установка</a></li>
+										<li><a href="">Икропробивочная машина</a></li>
+										<li><a href="">Машина посола и отжима икры</a></li>
+										<li><a href="">Измельчитель рыбных отходов</a></li>
+										<li><a href="">Мешкозашивочная машина</a></li>
+									</ul>
+								</li>
+								<li>
+									<span class="icon-wrap"><i class="icon icon-catalog-meat-white"></i></span>
+									<a href="">Глубокая переработка</a>
+									<ul>
+										<li><a href="">Дефростер</a></li>
+										<li><a href="">Филетировочная машина</a></li>
+										<li><a href="">Удалитель боковых костей</a></li>
+										<li><a href="">Шкуросъемная машина</a></li>
+										<li><a href="">Камера холодного копчения</a></li>
+										<li><a href="">Инъектор</a></li>
+										<li><a href="">Слайсер</a></li>
+										<li><a href="">Вакуумный упаковщик</a></li>
+										<li><a href="">Сушильная камера</a></li>
+										<li><a href="">Термоусадочное оборудование</a></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li class="in-2">
+							<a href="">КОМПЛЕКСНЫЕ РЕШЕНИЯ</a>
+							<ul>
+								<li><a href="">Линия разделки лососевых пород РПО-4ГБ</a></li>
+								<li><a href="">Линия сортировки и весового контроля</a></li>
+								<li><a href="">Линия тарировки и упаковки</a></li>
+							</ul>
+							<ul>
+								<li><a href="">Икорный цех</a></li>
+								<li><a href="">Автономный генератор бинарного льда</a></li>
+								<li><a href="">Морозильный комплекс с ЦСХ</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="">ЗАПАСНЫЕ ЧАСТИ</a>
+							<ul>
+								<li><a href="">ЗИП к силовой технике</a></li>
+								<li><a href="">ЗИП к холодильной технике</a></li>
+								<li><a href="">ЗИП к оборудованию по рыбопереработке</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="">УСЛУГИ</a>
+							<ul>
+								<li><a href="">Материально-техническое обеспечение</a></li>
+								<li><a href="">Монтаж и пусконаладка</a></li>
+								<li><a href="">Обучение</a></li>
+								<li><a href="">Ремонт</a></li>
+								<li><a href="">Лизинг</a></li>
+								<li><a href="">Доставка</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="">ГАЛЕРЕЯ</a>
+						</li>
+						<li>
+							<a href="">КОНТАКТЫ</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="main">
+			<div class="breadcrumbs">
+				<ul class="li_line container">
+					<li><a href="">Главная</a></li>
+					<li><a href="">Каталог товаров</a></li>
+					<li><a href="">Силовая техника</a></li>
+					<li><a href="">Дизельные генераторы</a></li>
+					<li>Дизельный генератор ADM-2400 MTU (2400 кВт)</li>
+				</ul>
+			</div>
+			<div class="container">
+				<div class="product tabs">
+					<h1 class="title">Дизельный генератор ADM-2400 MTU (2400 кВт)</h1>
+					<div class="product__data row">
+						<div class="product__left col">
+							<div class="product__images">
+								<div class="images__list">
+									<a href="upload/products/1.jpg" data-fancybox="product"><img src="upload/products/1.jpg" alt=""><i class="images__icon icon icon-magnifying-glass-plus-gray"></i></a>
+									<a href="upload/products/1.jpg" data-fancybox="product"><img src="upload/products/1.jpg" alt=""></a>
+									<a href="upload/products/1.jpg" data-fancybox="product"><img src="upload/products/1.jpg" alt=""></a>
+									<a href="upload/products/1.jpg" data-fancybox="product"><img src="upload/products/1.jpg" alt=""></a>
+								</div>
+								<div class="product__count"><span>4</span><i class="icon icon-img-count-white"></i>
+								</div>
+							</div>
+							<div class="product__icons icons row w4">
+								<div class="col">
+									<div class="icons__item icons__item_regulation">
+										<div class="icons__icon"><i class="icon icon-product-regulation-black"></i></div>
+										<div class="icons__content">Элементарная почвенная частица вероятна. С учетом всех вышеизложенных обстоятельств, можно считать допустимым.</div>
+									</div>
+								</div>
+								<div class="col">
+									<div class="icons__item icons__item_helmet">
+										<div class="icons__icon"><i class="icon icon-product-helmet-black"></i></div>
+										<div class="icons__content">Элементарная почвенная частица вероятна. С учетом всех вышеизложенных обстоятельств, можно считать допустимым.</div>
+									</div>
+								</div>
+								<div class="col">
+									<div class="icons__item icons__item_screwdriver">
+										<div class="icons__icon"><i class="icon icon-product-screwdriver-black"></i></div>
+										<div class="icons__content">Элементарная почвенная частица вероятна. С учетом всех вышеизложенных обстоятельств, можно считать допустимым.</div>
+									</div>
+								</div>
+								<div class="col">
+									<div class="icons__item icons__item_plan">
+										<div class="icons__icon"><i class="icon icon-product-plan-black"></i></div>
+										<div class="icons__content">Элементарная почвенная частица вероятна. С учетом всех вышеизложенных обстоятельств, можно считать допустимым.</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="product__right col">
+							<div class="product__characteristics characteristics">
+								<div class="characteristics__table-title">Характеристики</div>
+								<table class="characteristics__table table table_ladder-1">
+									<tbody>
+										<tr>
+											<td>Двигатель:</td>
+											<td>MTU (Китай)</td>
+										</tr>
+										<tr>
+											<td>Напряжение:</td>
+											<td>400 В</td>
+										</tr>
+										<tr>
+											<td>Мощность:</td>
+											<td>3018 кВА</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="product__price price">
+								<div class="price__title">Основная цена:*</div>
+								<div class="row w2">
+									<div class="col"><div class="price__count"><span>1 420 000</span> руб.</div></div>
+									<div class="col"><div class="price__button button button_block button_blue button_blue-l">Оформить запрос</div></div>
+								</div>
+								<div class="row w2 row-two">
+									<div class="col price__dops">
+										<p class="price__dops-title">Стоимость опций:</p>
+										<p class="price__dops-count"><span></span> руб.</p>
+									</div>
+									<div class="col price__desc">*точную стоимость уточняйте у <br />менеджеров компании</div>
+								</div>
+							</div>
+							<div class="product__links-tab links-tab">
+								<div class="links-tab__button button button_block button_gray-smoke" data-tab="product-tab-dops"><i class="icon icon-gear-blue"></i><span>Добавить опцию</span></div>
+								<div class="links-tab__a" data-tab="product-tab-dupl"><i class="icon icon-gear-key"></i><span>Заказать запчасти и сервис</span></div>
+								<div class="links-tab__a" data-tab="product-tab-docs"><i class="icon icon-book"></i><span>Запросить руководство по эксплуатации</span></div>
+							</div>
+							<div class="product__desc">
+								<p>Дизельные генераторы (электростанции) серии ADM-2400 мощностью 2400 кВт предназначены для получения трехфазного электрического тока частотой 50 Гц и напряжением 400 В. Электростанции ADM-2400 применяются в качестве основных и резервных источников электроснабжения буровых установок, нефтегазовых месторождений, промышленных предприятий и населенных пунктов, лишенных центрального энергоснабжения.</p>
+								<p>К электростанции ADM-2400 мы подберем необходимое дополнительное оборудование и вариант исполнения, подходящий для ваших условий эксплуатации.</p>
+							</div>
+						</div>
+					</div>
+					<div class="product__tabs">
+					    <ul class="tabs__nav li_line">
+					        <li class="tabs__nav-item tabs__nav-item_select" data-tab="product-tab-characteristics">Подробные характеристики</li>
+					        <li class="tabs__nav-item" data-tab="product-tab-dops"><i class="icon icon-gear-big-turquoise"></i>Дополнительные опции</li>
+					        <li class="tabs__nav-item" data-tab="product-tab-dupl">Запчасти</li>
+					        
+					        <li class="tabs__nav-item" data-tab="product-tab-docs">Документы</li>
+					    </ul>
+					    <div class="tabs__content">
+					        <div class="tabs__tab" id="product-tab-characteristics">
+					        	<table class="characteristics__table table table_ladder-2">
+									<tbody>
+										<tr>
+											<td>Модель двигателя</td>
+											<td><a href="">MTU 20V4000G63LF</a></td>
+										</tr>
+										<tr>
+											<td>Частота вращения вала двигателя, об/мин</td>
+											<td>1500</td>
+										</tr>
+										<tr>
+											<td>Тип</td>
+											<td>20VTI</td>
+										</tr>
+										<tr>
+											<td>Диаметр цилинтра, мм</td>
+											<td>170</td>
+										</tr>
+										<tr>
+											<td>Ход поршня, мм</td>
+											<td>210</td>
+										</tr>
+										<tr>
+											<td>рабочий объем</td>
+											<td>95.4</td>
+										</tr>
+										<tr>
+											<td>Степерь сжатия</td>
+											<td>16.5:1</td>
+										</tr>
+									</tbody>
+								</table>
+					        </div>
+					        <div class="tabs__tab" id="product-tab-docs">
+					        	<div class="docs">
+					        		<div class="docs__item row">
+					        			<div class="docs__icon col"><i class="icon icon-doc"></i></div>
+					        			<div class="docs__content col">
+					        				<div class="docs__title"><a href="">Наименование документа для скачивания</a></div>
+					        				<div class="docs__desc"><span>Тип файла: DOC</span><span>Вес файла: 150 Кб.</span></div>
+					        			</div>
+					        		</div>
+					        		<div class="docs__item row">
+					        			<div class="docs__icon col"><i class="icon icon-doc"></i></div>
+					        			<div class="docs__content col">
+					        				<div class="docs__title"><a href="">Инструкция по работе с аппаратурой</a></div>
+					        				<div class="docs__desc"><span>Тип файла: ZIP</span><span>Вес файла: 2.5 Мб.</span></div>
+					        			</div>
+					        		</div>
+					        	</div>
+					        </div>
+					        <div class="tabs__tab" id="product-tab-dops">
+								<div class="dops">
+									<div class="dops__text">Компания Холодотехника предлагает широкий ассортимент запчастей, комплектующих и дополнительного оборудования для дизельных установок (дизельгенераторов, насосных установок, силовых приводов, специальной техники).</div>
+									<div class="dops__list-title">Для данного оборудования подходят следующие опции:</div>
+									<div class="dops__list">
+										<div class="dops__item row">
+											<div class="dops__img col"><img src="upload/dops/1.jpg" alt=""></div>
+											<div class="dops__content col">
+												<div class="dops__title">Кожух шумозащитный</div>
+												<div class="dops__desc">Шумозащитный кожух является одним из вариантов исполнения электростанции и предназначен для снижения уровня шума работающего оборудования до нормируемых пределов. Данное решение позволяет устанавливать и эксплуатировать <br />дизель-генераторное оборудование.</div>
+												<div class="dops__strong">Совместимость: Вся серия дизельных генераторов TOD</div>
+											</div>
+											<div class="dops__price col">
+												<div class="dops__price-title">Стоимость:</div>
+												<div class="dops__price-count"><span>45000</span> руб.</div>
+												<input type="checkbox" id="dops-1" class="dops__checkbox">
+												<label class="dops__button button button_block button_gray-smoke" for="dops-1"><i class="icon icon-plus"></i><span>Добавить опцию</span></label>
+												<label for="dops-1" class="dops__add"></label>
+												<label for="dops-1" class="dops__clear"><i class="icon icon-clear"></i>убрать опцию</label>
+											</div>
+										</div>
+										<div class="dops__item row">
+											<div class="dops__img col"><img src="upload/dops/2.jpg" alt=""></div>
+											<div class="dops__content col">
+												<div class="dops__title">Автоприцеп</div>
+												<div class="dops__desc">Шумозащитный кожух является одним из вариантов исполнения электростанции и предназначен для снижения уровня шума работающего оборудования до нормируемых пределов.</div>
+												<div class="dops__strong">Совместимость: Вся серия дизельных генераторов TOD</div>
+											</div>
+											<div class="dops__price col">
+												<div class="dops__price-title">Стоимость:</div>
+												<div class="dops__price-count"><span>89000</span> руб.</div>
+												<input type="checkbox" id="dops-2" class="dops__checkbox">
+												<label class="dops__button button button_block button_gray-smoke" for="dops-2"><i class="icon icon-plus"></i><span>Добавить опцию</span></label>
+												<label for="dops-2" class="dops__add"></label>
+												<label for="dops-2" class="dops__clear"><i class="icon icon-clear"></i>убрать опцию</label>
+											</div>
+										</div>
+										<div class="dops__item row">
+											<div class="dops__img col"><img src="upload/dops/3.jpg" alt=""></div>
+											<div class="dops__content col">
+												<div class="dops__title">Контейнер Север</div>
+												<div class="dops__desc">Данное решение позволяет устанавливать и эксплуатировать дизель-генераторное оборудование в местах постоянного.</div>
+												<div class="dops__strong">Совместимость: Вся серия дизельных генераторов TOD</div>
+											</div>
+											<div class="dops__price col">
+												<div class="dops__price-title">Стоимость:</div>
+												<div class="dops__price-count"><span>350000</span> руб.</div>
+												<input type="checkbox" id="dops-3" class="dops__checkbox">
+												<label class="dops__button button button_block button_gray-smoke" for="dops-3"><i class="icon icon-plus"></i><span>Добавить опцию</span></label>
+												<label for="dops-3" class="dops__add"></label>
+												<label for="dops-3" class="dops__clear"><i class="icon icon-clear"></i>убрать опцию</label>
+											</div>
+										</div>
+										<div class="dops__item row">
+											<div class="dops__img col"><img src="upload/dops/3.jpg" alt=""></div>
+											<div class="dops__content col">
+												<div class="dops__title">Контейнер Север</div>
+												<div class="dops__desc">Данное решение позволяет устанавливать и эксплуатировать дизель-генераторное оборудование в местах постоянного.</div>
+												<div class="dops__strong">Совместимость: Вся серия дизельных генераторов TOD</div>
+											</div>
+											<div class="dops__price col">
+												<div class="dops__price-title">Стоимость:</div>
+												<div class="dops__price-count"><span>350000</span> руб.</div>
+												<input type="checkbox" id="dops-4" class="dops__checkbox">
+												<label class="dops__button button button_block button_gray-smoke" for="dops-4"><i class="icon icon-plus"></i><span>Добавить опцию</span></label>
+												<label for="dops-4" class="dops__add"></label>
+												<label for="dops-4" class="dops__clear"><i class="icon icon-clear"></i>убрать опцию</label>
+											</div>
+										</div>
+										<div class="dops__item row">
+											<div class="dops__img col"><img src="upload/dops/3.jpg" alt=""></div>
+											<div class="dops__content col">
+												<div class="dops__title">Контейнер Север</div>
+												<div class="dops__desc">Данное решение позволяет устанавливать и эксплуатировать дизель-генераторное оборудование в местах постоянного.</div>
+												<div class="dops__strong">Совместимость: Вся серия дизельных генераторов TOD</div>
+											</div>
+											<div class="dops__price col">
+												<div class="dops__price-title">Стоимость:</div>
+												<div class="dops__price-count"><span>350000</span> руб.</div>
+												<input type="checkbox" id="dops-5" class="dops__checkbox">
+												<label class="dops__button button button_block button_gray-smoke" for="dops-5"><i class="icon icon-plus"></i><span>Добавить опцию</span></label>
+												<label for="dops-5" class="dops__add"></label>
+												<label for="dops-5" class="dops__clear"><i class="icon icon-clear"></i>убрать опцию</label>
+											</div>
+										</div>
+										<div class="dops__item row">
+											<div class="dops__img col"><img src="upload/dops/3.jpg" alt=""></div>
+											<div class="dops__content col">
+												<div class="dops__title">Контейнер Север</div>
+												<div class="dops__desc">Данное решение позволяет устанавливать и эксплуатировать дизель-генераторное оборудование в местах постоянного.</div>
+												<div class="dops__strong">Совместимость: Вся серия дизельных генераторов TOD</div>
+											</div>
+											<div class="dops__price col">
+												<div class="dops__price-title">Стоимость:</div>
+												<div class="dops__price-count"><span>350000</span> руб.</div>
+												<input type="checkbox" id="dops-6" class="dops__checkbox">
+												<label class="dops__button button button_block button_gray-smoke" for="dops-6"><i class="icon icon-plus"></i><span>Добавить опцию</span></label>
+												<label for="dops-6" class="dops__add"></label>
+												<label for="dops-6" class="dops__clear"><i class="icon icon-clear"></i>убрать опцию</label>
+											</div>
+										</div>
+									</div>
+								</div>
+					        </div>
+					        <div class="tabs__tab" id="product-tab-dupl">
+					        	<div class="dupl">
+					        		<div class="sort row">
+					        			<div class="sort__count col">Всего в категории <span>148</span> товаров</div>
+					        			<div class="sort__list col">
+						        			<div class="sort__sort-type-1">
+						        				<span>Сортировка:</span>
+						        				<div class="select select_trasparent">
+												    <p class="select__title">Название селекта</p>
+												    <ul class="select__list"></ul>
+												    <select class="select__parsing" name="">
+												        <option value="1" selected="selected">Наименование</option>
+												        <option value="2">Наименование</option>
+												        <option value="3">Наименование</option>
+												    </select>
+												</div>
+						        			</div>
+						        			<div class="sort__sort-type-2"><span>Стоимость</span></div>
+					        			</div>
+					        		</div>
+					        		<div class="dupl__bottom">
+					        			<div class="dupl__titles row">
+					        				<div class="dupl__col col text-center">Наименование</div>
+					        				<div class="dupl__col col">Совместимость</div>
+					        				<div class="dupl__col col">Цена</div>
+					        			</div>
+					        			<div class="dupl__list">
+					        				<div class="dupl__item row">
+					        					<div class="dupl__col col">
+					        						<div class="dupl__img"><img src="upload/duplicates/1.png" alt=""></div>
+					        						<div class="dupl__title"><a href="">Модуль управления запуском DSE702</a></div>
+					        					</div>
+						        				<div class="dupl__col col">
+						        					<div class="dupl__desc">Все двигателя серии HAW 12</div>
+						        				</div>
+						        				<div class="dupl__col col">
+						        					<div class="dupl__price"><span>28 000</span> руб.</div>
+						        				</div>
+					        				</div>
+					        				<div class="dupl__item row">
+					        					<div class="dupl__col col">
+					        						<div class="dupl__img"><img src="upload/duplicates/2.png" alt=""></div>
+					        						<div class="dupl__title"><a href="">Датчик давления масла д/двиг. Cummins 6C8,3/6L8,9</a></div>
+					        					</div>
+						        				<div class="dupl__col col">
+						        					<div class="dupl__desc">Какое-то текстовое описание</div>
+						        				</div>
+						        				<div class="dupl__col col">
+						        					<div class="dupl__price"><span>12 000</span> руб.</div>
+						        				</div>
+					        				</div>
+					        				<div class="dupl__item row">
+					        					<div class="dupl__col col">
+					        						<div class="dupl__img"><img src="upload/duplicates/none.png" alt=""></div>
+					        						<div class="dupl__title"><a href="">Датчик уровня ОЖ для ДГУ Powerlink GMC60C</a></div>
+					        					</div>
+						        				<div class="dupl__col col">
+						        					<div class="dupl__desc"></div>
+						        				</div>
+						        				<div class="dupl__col col">
+						        					<div class="dupl__price-btn button button_gray">запросить цену</div>
+						        				</div>
+					        				</div>
+					        				<div class="dupl__item row">
+					        					<div class="dupl__col col">
+					        						<div class="dupl__img"><img src="upload/duplicates/none.png" alt=""></div>
+					        						<div class="dupl__title"><a href="">Датчик уровня ОЖ для ДГУ Powerlink GMC60C</a></div>
+					        					</div>
+						        				<div class="dupl__col col">
+						        					<div class="dupl__desc"></div>
+						        				</div>
+						        				<div class="dupl__col col">
+						        					<div class="dupl__price-btn button button_gray">запросить цену</div>
+						        				</div>
+					        				</div>
+					        				<div class="dupl__item row">
+					        					<div class="dupl__col col">
+					        						<div class="dupl__img"><img src="upload/duplicates/none.png" alt=""></div>
+					        						<div class="dupl__title"><a href="">Датчик уровня ОЖ для ДГУ Powerlink GMC60C</a></div>
+					        					</div>
+						        				<div class="dupl__col col">
+						        					<div class="dupl__desc"></div>
+						        				</div>
+						        				<div class="dupl__col col">
+						        					<div class="dupl__price-btn button button_gray">запросить цену</div>
+						        				</div>
+					        				</div>
+					        				<div class="dupl__item row">
+					        					<div class="dupl__col col">
+					        						<div class="dupl__img"><img src="upload/duplicates/none.png" alt=""></div>
+					        						<div class="dupl__title"><a href="">Датчик уровня ОЖ для ДГУ Powerlink GMC60C</a></div>
+					        					</div>
+						        				<div class="dupl__col col">
+						        					<div class="dupl__desc"></div>
+						        				</div>
+						        				<div class="dupl__col col">
+						        					<div class="dupl__price-btn button button_gray">запросить цену</div>
+						        				</div>
+					        				</div>
+					        				<div class="dupl__item row">
+					        					<div class="dupl__col col">
+					        						<div class="dupl__img"><img src="upload/duplicates/none.png" alt=""></div>
+					        						<div class="dupl__title"><a href="">Датчик уровня ОЖ для ДГУ Powerlink GMC60C</a></div>
+					        					</div>
+						        				<div class="dupl__col col">
+						        					<div class="dupl__desc"></div>
+						        				</div>
+						        				<div class="dupl__col col">
+						        					<div class="dupl__price-btn button button_gray">запросить цену</div>
+						        				</div>
+					        				</div>
+					        				<div class="dupl__item row">
+					        					<div class="dupl__col col">
+					        						<div class="dupl__img"><img src="upload/duplicates/none.png" alt=""></div>
+					        						<div class="dupl__title"><a href="">Датчик уровня ОЖ для ДГУ Powerlink GMC60C</a></div>
+					        					</div>
+						        				<div class="dupl__col col">
+						        					<div class="dupl__desc"></div>
+						        				</div>
+						        				<div class="dupl__col col">
+						        					<div class="dupl__price-btn button button_gray">запросить цену</div>
+						        				</div>
+					        				</div>
+					        				<div class="dupl__item row">
+					        					<div class="dupl__col col">
+					        						<div class="dupl__img"><img src="upload/duplicates/none.png" alt=""></div>
+					        						<div class="dupl__title"><a href="">Датчик уровня ОЖ для ДГУ Powerlink GMC60C</a></div>
+					        					</div>
+						        				<div class="dupl__col col">
+						        					<div class="dupl__desc"></div>
+						        				</div>
+						        				<div class="dupl__col col">
+						        					<div class="dupl__price-btn button button_gray">запросить цену</div>
+						        				</div>
+					        				</div>
+					        				<div class="dupl__item row">
+					        					<div class="dupl__col col">
+					        						<div class="dupl__img"><img src="upload/duplicates/none.png" alt=""></div>
+					        						<div class="dupl__title"><a href="">Датчик уровня ОЖ для ДГУ Powerlink GMC60C</a></div>
+					        					</div>
+						        				<div class="dupl__col col">
+						        					<div class="dupl__desc"></div>
+						        				</div>
+						        				<div class="dupl__col col">
+						        					<div class="dupl__price-btn button button_gray">запросить цену</div>
+						        				</div>
+					        				</div>
+					        			</div>
+					        		</div>
+					        	</div>
+					        </div>
+					    </div>
+					</div>
+					<div class="product__info"><i class="icon icon-info"></i>Компания «Холодотехника» оставляет за собой право изменять технические характеристики без предварительного уведомления.</div>
+					<div class="return"><a href=""><i class="icon icon-arrow-left"></i><span>Вернуться в каталог</span></a></div>
+				</div>
+			</div>
+			<div class="product__plashka plashka">
+				<div class="container">
+					<div class="row">
+						<div class="col">
+							<div class="plashka__title">ЗАИНТЕРЕСОВАЛ ТОВАР?</div>
+							<div class="plashka__desc">Свяжитесь с нами или оформите заявку.</div>
+						</div>
+						<div class="col">
+							<div class="plashka__federal-phone"><a href="">8 800 250 2545</a></div>
+							<div class="plashka__federal-text">бесплатно по всей России</div>
+						</div>
+						<div class="col">
+							<div class="plashka__phone"><a href="">+7 (423) 20-999-10</a></div>
+							<div class="plashka__callback callback callback_yellow"><i class="icon icon-phone-yellow"></i><span>заказать звонок</span></div>
+							<div class="callback-block">
+								<div class="callback-block__close">
+									<span></span><span></span>
+								</div>
+								<div class="callback-block__title">Запрос на звонок</div>
+								<input class="callback-block__input input input_block" placeholder="Ваше имя">
+								<input class="callback-block__input input input_block" placeholder="+7 (       )        -     -">
+								<div class="callback-block__button button button_block button_blue button_blue-s">ОТПРАВИТЬ</div>
+							</div>
+						</div>
+						<div class="col">
+							<div class="plashka__button button button_block button_blue button_blue-l">Оформить запрос</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="other links">
+				<div class="container row">
+					<div class="links__left col">
+						<div class="links__title links__title_services">УСЛУГИ</div>
+						<div class="links__desc">Холодотехника предоставляет полный комплекс сервисных услуг по сопровождению оборудования:</div>
+						<ul>
+							<li><a href="">Материально-техническое обеспечение</a></li>
+							<li><a href="">Монтаж и пусконаладка</a></li>
+							<li><a href="">Обучение</a></li>
+							<li><a href="">Ремонт</a></li>
+							<li><a href="">Лизинг</a></li>
+							<li><a href="">Доставка</a></li>
+						</ul>
+					</div>
+					<div class="links__right col">
+						<div class="links__title links__title_duplicates">ЗАПАСНЫЕ ЧАСТИ</div>
+						<div class="links__desc">Компания Холодотехника предлагает широкий ассортимент запчастей, комплектующих и дополнительного оборудования для дизельных установок (дизельгенераторов, насосных установок, силовых приводов, специальной техники).</div>
+						<ul>
+							<li><a href="">ЗИП к силовой технике</a></li>
+							<li><a href="">ЗИП к холодильной технике</a></li>
+							<li><a href="">ЗИП к оборудованию по рыбопереработке</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer">
+			<div class="footer__top">
+				<div class="container row w4">
+					<div class="col">
+						<div class="footer__title">КАТАЛОГ</div>
+						<div class="footer__nav">
+							<ul>
+								<li><a href="">Силовая техника</a></li>
+								<li><a href="">Холодильная техника </a></li>
+								<li><a href="">Льдогенераторы</a></li>
+								<li><a href="">Теплообменное оборудование</a></li>
+								<li><a href="">Первичная переработка</a></li>
+								<li><a href="">Глубокая переработка</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col">
+						<div class="footer__title">КОМПЛЕКСНЫЕ <br />РЕШЕНИЯ</div>
+						<div class="footer__nav">
+							<ul>
+								<li><a href="">Линия разделки лососевых пород РПО-4ГБ</a></li>
+								<li><a href="">Линия сортировки и весового контроля</a></li>
+								<li><a href="">Линия тарировки и упаковки</a></li>
+								<li><a href="">Икорный цех</a></li>
+								<li><a href="">Автономный генератор бинарного льда</a></li>
+								<li><a href="">Морозильный комплекс с ЦСХ</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col">
+						<div class="footer__title">ЗАПАСНЫЕ <br />ЧАСТИ</div>
+						<div class="footer__nav">
+							<ul>
+								<li><a href="">ЗИП к силовой технике</a></li>
+								<li><a href="">ЗИП к холодильной технике</a></li>
+								<li><a href="">ЗИП к оборудованию по рыбопереработке</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col">
+						<div class="footer__title">УСЛУГИ</div>
+						<div class="footer__nav">
+							<ul>
+								<li><a href="">Материально-техническое обеспечение</a></li>
+								<li><a href="">Монтаж и пусконаладка</a></li>
+								<li><a href="">Обучение</a></li>
+								<li><a href="">Ремонт</a></li>
+								<li><a href="">Лизинг</a></li>
+								<li><a href="">Доставка</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer__bottom container">
+				<div class="footer__content row">
+					<div class="footer__logo col"><a href=""><img src="upload/logo/logo-2.png" alt=""></a><div class="footer__logo-desc">Машины Вашего успеха</div></div>
+					<div class="clearfix">
+						<div class="footer__phone col">
+							<p class="footer__phone-nums"><a href="">8 800 250 2545</a></p>
+							<p class="footer__phone-text">бесплатно по всей России</p>
+							<div class="footer__callback callback"><i class="icon icon-phone-turquoise"></i><span>заказать звонок</span></div>
+							<div class="contacts-block__callback-block callback-block">
+								<div class="callback-block__close">
+									<span></span><span></span>
+								</div>
+								<div class="callback-block__title">Запрос на звонок</div>
+								<input class="callback-block__input input input_block" placeholder="Ваше имя">
+								<input class="callback-block__input input input_block" placeholder="+7 (       )        -     -">
+								<div class="callback-block__button button button_block button_blue button_blue-s">ОТПРАВИТЬ</div>
+							</div>
+						</div>
+						<div class="footer__phones col">
+							<p><a href="">+7 (423) 275-48-90</a></p>
+							<p><a href="">+7 (423) 272-99-71</a></p>
+							<p><a href="">+7 (423) 20-999-10</a></p>
+						</div>
+					</div>
+					<div class="footer__contacts col">
+						<p>г. Владивосток, Уссурийская 1, корпус 5</p>
+						<p><a href="" class="email">sale@holodtechno.ru</a></p>
+					</div>
+				</div>
+				<div class="footer__copy copy row w2">
+					<div class="col copy__content">
+						<p>© 2010-2017 ООО "Холодотехника"</p>
+						<p>Копирование материала с сайта запрещено без согласия с администратрации.</p>
+					</div>
+					<div class="col copy__dev col">
+						<p>Разработка сайта - <a href="//kefirok.ru/" target="_blank">Студия Кефирок</a></p>
+						<p>2017 год</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
